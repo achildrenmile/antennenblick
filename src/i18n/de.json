@@ -1,0 +1,72 @@
+{
+  "app": {
+    "title": "Antennenblick",
+    "subtitle": "Antennen-Abstrahldiagramme verstehen"
+  },
+  "language": {
+    "switch": "English",
+    "current": "Deutsch"
+  },
+  "antenna": {
+    "title": "Antennentyp",
+    "dipole": "Halbwellen-Dipol (horizontal)",
+    "vertical": "Vertikale Groundplane (1/4 λ)",
+    "invertedV": "Inverted-V Dipol"
+  },
+  "controls": {
+    "height": "Antennenhöhe",
+    "heightUnit": "m",
+    "band": "Band",
+    "orientation": "Ausrichtung",
+    "orientationUnit": "°"
+  },
+  "view": {
+    "azimuth": "Horizontaldiagramm",
+    "elevation": "Vertikaldiagramm",
+    "azimuthTooltip": "Blick von oben auf die Antenne",
+    "elevationTooltip": "Seitenansicht der Abstrahlung"
+  },
+  "reality": {
+    "title": "Realitätscheck",
+    "ideal": "Ideal",
+    "realistic": "Realistisch",
+    "idealDescription": "Perfekte Bedingungen ohne Umgebungseinflüsse",
+    "realisticDescription": "Typische Einflüsse durch Boden, Gebäude und Vegetation"
+  },
+  "explanation": {
+    "mainLobe": "Hauptkeule",
+    "null": "Auslöschung",
+    "nvis": "NVIS (Nahfeld)",
+    "dx": "DX (Weitverkehr)",
+    "highAngle": "Hoher Abstrahlwinkel",
+    "lowAngle": "Flacher Abstrahlwinkel"
+  },
+  "tips": {
+    "dipole": {
+      "low": "Bei niedriger Aufhängung strahlt der Dipol steil nach oben ab – ideal für NVIS-Verbindungen bis ca. 500 km.",
+      "medium": "In mittlerer Höhe bildet sich ein ausgewogenes Strahlungsdiagramm für mittlere Entfernungen.",
+      "high": "Hoch aufgehängt wird der Abstrahlwinkel flacher – besser für DX-Verbindungen."
+    },
+    "vertical": {
+      "low": "Die Vertikalantenne strahlt grundsätzlich flach ab, ideal für DX.",
+      "medium": "Die Bodenqualität beeinflusst die Effizienz stark – Radiale verbessern die Abstrahlung.",
+      "high": "Mehr Höhe über Grund kann bei Vertikalantennen kontraproduktiv sein."
+    },
+    "invertedV": {
+      "low": "Der Inverted-V ist ein Kompromiss zwischen Dipol und Vertikaler mit omnidirektionalerer Abstrahlung.",
+      "medium": "Der Öffnungswinkel der Schenkel beeinflusst das Strahlungsdiagramm erheblich.",
+      "high": "Höher aufgehängt nähert sich das Diagramm dem eines horizontalen Dipols an."
+    },
+    "realistic": "In der Praxis beeinflussen Boden, Gebäude und Bäume das Strahlungsdiagramm. Die Darstellung zeigt typische Verzerrungen."
+  },
+  "directions": {
+    "n": "N",
+    "ne": "NO",
+    "e": "O",
+    "se": "SO",
+    "s": "S",
+    "sw": "SW",
+    "w": "W",
+    "nw": "NW"
+  }
+}

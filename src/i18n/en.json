@@ -1,0 +1,72 @@
+{
+  "app": {
+    "title": "Antennenblick",
+    "subtitle": "Understanding Antenna Radiation Patterns"
+  },
+  "language": {
+    "switch": "Deutsch",
+    "current": "English"
+  },
+  "antenna": {
+    "title": "Antenna Type",
+    "dipole": "Half-Wave Dipole (horizontal)",
+    "vertical": "Vertical Ground Plane (1/4 λ)",
+    "invertedV": "Inverted-V Dipole"
+  },
+  "controls": {
+    "height": "Antenna Height",
+    "heightUnit": "m",
+    "band": "Band",
+    "orientation": "Orientation",
+    "orientationUnit": "°"
+  },
+  "view": {
+    "azimuth": "Azimuth Pattern",
+    "elevation": "Elevation Pattern",
+    "azimuthTooltip": "Top-down view of the antenna",
+    "elevationTooltip": "Side view of radiation"
+  },
+  "reality": {
+    "title": "Reality Check",
+    "ideal": "Ideal",
+    "realistic": "Realistic",
+    "idealDescription": "Perfect conditions without environmental influences",
+    "realisticDescription": "Typical influences from ground, buildings, and vegetation"
+  },
+  "explanation": {
+    "mainLobe": "Main Lobe",
+    "null": "Null",
+    "nvis": "NVIS (Near Field)",
+    "dx": "DX (Long Distance)",
+    "highAngle": "High radiation angle",
+    "lowAngle": "Low radiation angle"
+  },
+  "tips": {
+    "dipole": {
+      "low": "At low height, the dipole radiates steeply upward – ideal for NVIS contacts up to about 500 km.",
+      "medium": "At medium height, a balanced radiation pattern develops for medium distances.",
+      "high": "Mounted high, the radiation angle becomes flatter – better for DX contacts."
+    },
+    "vertical": {
+      "low": "The vertical antenna radiates at a low angle by default, ideal for DX.",
+      "medium": "Ground quality strongly affects efficiency – radials improve radiation.",
+      "high": "More height above ground can be counterproductive for vertical antennas."
+    },
+    "invertedV": {
+      "low": "The Inverted-V is a compromise between dipole and vertical with more omnidirectional radiation.",
+      "medium": "The opening angle of the legs significantly affects the radiation pattern.",
+      "high": "Mounted higher, the pattern approaches that of a horizontal dipole."
+    },
+    "realistic": "In practice, ground, buildings, and trees affect the radiation pattern. This shows typical distortions."
+  },
+  "directions": {
+    "n": "N",
+    "ne": "NE",
+    "e": "E",
+    "se": "SE",
+    "s": "S",
+    "sw": "SW",
+    "w": "W",
+    "nw": "NW"
+  }
+}

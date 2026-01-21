@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  antennenblick:
+    build: .
+    container_name: antennenblick
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3403:80"
