@@ -589,16 +589,34 @@ body {
 
   .sidebar {
     padding: 1rem;
+    max-height: 35vh;
+    overflow-y: auto;
   }
 
   .visualization {
     padding: 1rem;
+    flex: 1;
+    min-height: 50vh;
+  }
+
+  .diagrams {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .polar-diagram,
+  .elevation-diagram {
+    flex: 1 1 45%;
+    min-width: 140px;
+    max-width: 48%;
   }
 
   .polar-svg,
   .elevation-svg {
     width: 100%;
-    max-width: 300px;
+    max-width: none;
   }
 }
 
@@ -3559,11 +3577,24 @@ body {
 
   .visualization {
     padding: 0.5rem;
+    min-height: 55vh;
+  }
+
+  .diagrams {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .polar-diagram,
+  .elevation-diagram {
+    flex: 1 1 48%;
+    min-width: 130px;
   }
 
   .polar-svg,
   .elevation-svg {
-    max-width: 240px;
+    width: 100%;
+    max-width: none;
   }
 
   .explanation-panel {
