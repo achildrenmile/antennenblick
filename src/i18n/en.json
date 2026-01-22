@@ -7,24 +7,127 @@
     "switch": "Deutsch",
     "current": "English"
   },
+  "theme": {
+    "toggle": "Change theme",
+    "dark": "Dark",
+    "light": "Light",
+    "system": "System"
+  },
   "antenna": {
     "title": "Antenna Type",
-    "dipole": "Half-Wave Dipole (horizontal)",
-    "vertical": "Vertical Ground Plane (1/4 λ)",
-    "invertedV": "Inverted-V Dipole"
+    "dipole": "Half-Wave Dipole",
+    "vertical": "Vertical (1/4 λ GP)",
+    "vertical58": "Vertical (5/8 λ)",
+    "collinear": "Collinear Vertical",
+    "invertedV": "Inverted-V",
+    "efhw": "EFHW (End-Fed)",
+    "randomWire": "Random Wire",
+    "deltaLoop": "Delta Loop",
+    "g5rv": "G5RV",
+    "yagi2el": "Yagi 2 Elements",
+    "yagi3el": "Yagi 3 Elements",
+    "yagi4el": "Yagi 4 Elements",
+    "yagi5el": "Yagi 5 Elements",
+    "yagi6el": "Yagi 6 Elements",
+    "magloop": "Magnetic Loop",
+    "windom": "Windom / OCF Dipole",
+    "zepp": "Zepp / End-Fed Zepp",
+    "edz": "EDZ (Ext. Double Zepp)",
+    "quadLoop": "Quad Loop",
+    "quad2el": "Quad 2 Elements",
+    "quad3el": "Quad 3 Elements",
+    "sloper": "Sloper (1/2 λ)",
+    "longwire": "Long Wire (>1λ)",
+    "cobweb": "Cobweb / Spiderweb",
+    "hexbeam": "Hexbeam",
+    "zs6bkw": "ZS6BKW",
+    "hb9cv": "HB9CV",
+    "fanDipole": "Fan Dipole",
+    "spiderbeam": "Spiderbeam",
+    "moxon": "Moxon Rectangle",
+    "logPeriodic": "Log-Periodic (LPDA)",
+    "jPole": "J-Pole",
+    "slimJim": "Slim Jim",
+    "superJ": "Super-J (Collinear J)",
+    "discone": "Discone",
+    "helix": "Helix Antenna",
+    "patch": "Patch Antenna",
+    "vivaldi": "Vivaldi Antenna",
+    "moreInfo": "Build Instructions"
+  },
+  "antennaSearch": {
+    "searchLabel": "Search build plans",
+    "dipole": "half wave dipole antenna build instructions",
+    "vertical": "quarter wave vertical antenna build",
+    "vertical58": "5/8 lambda vertical antenna build",
+    "collinear": "collinear vertical antenna construction",
+    "invertedV": "inverted V antenna construction",
+    "efhw": "EFHW end fed half wave antenna build",
+    "randomWire": "random wire antenna construction",
+    "deltaLoop": "delta loop antenna build instructions",
+    "g5rv": "G5RV antenna construction",
+    "yagi2el": "2 element yagi antenna build DK7ZB",
+    "yagi3el": "3 element yagi antenna build DK7ZB",
+    "yagi4el": "4 element yagi antenna build DK7ZB",
+    "yagi5el": "5 element yagi antenna build",
+    "yagi6el": "6 element yagi antenna build",
+    "magloop": "magnetic loop antenna construction",
+    "windom": "windom OCF dipole antenna build",
+    "zepp": "zepp antenna construction",
+    "edz": "extended double zepp EDZ antenna build",
+    "quadLoop": "quad loop antenna build",
+    "quad2el": "2 element quad antenna construction",
+    "quad3el": "3 element quad antenna build",
+    "sloper": "half wave sloper antenna construction",
+    "longwire": "long wire antenna build",
+    "cobweb": "cobweb antenna construction",
+    "hexbeam": "hexbeam antenna build instructions",
+    "zs6bkw": "ZS6BKW antenna construction",
+    "hb9cv": "HB9CV antenna build instructions",
+    "fanDipole": "fan dipole multiband construction",
+    "spiderbeam": "spiderbeam antenna build instructions",
+    "moxon": "moxon rectangle antenna build",
+    "logPeriodic": "log periodic LPDA antenna construction",
+    "jPole": "J-Pole antenna VHF UHF build",
+    "slimJim": "slim jim antenna VHF UHF build",
+    "superJ": "super J collinear antenna construction",
+    "discone": "discone wideband antenna construction",
+    "helix": "helix antenna satellite build",
+    "patch": "patch antenna microwave construction",
+    "vivaldi": "vivaldi TSA antenna build instructions"
   },
   "controls": {
     "height": "Antenna Height",
     "heightUnit": "m",
     "band": "Band",
     "orientation": "Orientation",
-    "orientationUnit": "°"
+    "orientationUnit": "°",
+    "ground": "Ground Quality",
+    "groundPoor": "Poor (dry, rocky)",
+    "groundAverage": "Average (garden)",
+    "groundGood": "Good (moist, radials)",
+    "groundSaltwater": "Saltwater (coastal)",
+    "terrain": "Terrain",
+    "terrainFlat": "Flat",
+    "terrainHilly": "Hilly",
+    "terrainMountain": "Mountain",
+    "terrainUrban": "Urban",
+    "apexAngle": "Apex Angle",
+    "radials": "Radials"
+  },
+  "bandCategories": {
+    "lf": "LF (Long Wave)",
+    "mf": "MF (Medium Wave)",
+    "hf": "HF (Short Wave)",
+    "vhf": "VHF",
+    "uhf": "UHF",
+    "shf": "SHF (Microwave)"
   },
   "view": {
     "azimuth": "Azimuth Pattern",
     "elevation": "Elevation Pattern",
-    "azimuthTooltip": "Top-down view of the antenna",
-    "elevationTooltip": "Side view of radiation"
+    "azimuthTooltip": "Top view: Where does the antenna radiate?",
+    "elevationTooltip": "Side view: At what angle does it radiate?"
   },
   "reality": {
     "title": "Reality Check",
@@ -36,28 +139,388 @@
   "explanation": {
     "mainLobe": "Main Lobe",
     "null": "Null",
-    "nvis": "NVIS (Near Field)",
-    "dx": "DX (Long Distance)",
-    "highAngle": "High radiation angle",
-    "lowAngle": "Low radiation angle"
+    "nvis": "NVIS",
+    "dx": "DX",
+    "highAngle": "High Angle",
+    "lowAngle": "Low Angle",
+    "coverage": "Coverage",
+    "skipZone": "Skip Zone"
+  },
+  "specs": {
+    "title": "Antenna Specifications",
+    "length": "Length",
+    "height": "Height",
+    "radials": "Radials",
+    "gain": "Gain",
+    "impedance": "Impedance",
+    "bandwidth": "Bandwidth"
+  },
+  "coverage": {
+    "nvis": "NVIS mode: Signal radiates nearly straight up and reflects back almost vertically. Ideal for contacts up to ~500 km with no skip zone.",
+    "regional": "Regional coverage: Medium takeoff angle enables contacts between 300-1500 km. Small skip zone possible.",
+    "dx": "DX mode: Low takeoff angle for long-distance contacts 1000-4000 km. Skip zone in the near field.",
+    "worldwide": "Worldwide DX: Very low angle enables multi-hop propagation. Range up to 20,000 km, but large skip zone.",
+    "noNvis": "This band doesn't support NVIS. The frequency is too high for steep reflection.",
+    "estimated": "Estimated Range",
+    "to": "to",
+    "km": "km",
+    "deadZone": "Skip Zone"
+  },
+  "bands": {
+    "2200m": {
+      "bestTime": "Nighttime",
+      "range": "Regional to 1000 km",
+      "info": "LF band - requires extremely large antennas, very specialized"
+    },
+    "630m": {
+      "bestTime": "Nighttime",
+      "range": "Regional to 2000 km",
+      "info": "MF band - long antennas required, good ground wave propagation"
+    },
+    "160m": {
+      "bestTime": "Nighttime, especially in winter",
+      "range": "Regional to 2000 km at night, NVIS during day",
+      "info": "The 'Top Band' - high atmospheric noise, requires large antennas"
+    },
+    "80m": {
+      "bestTime": "Night and twilight",
+      "range": "NVIS during day (~500 km), DX at night to 3000 km",
+      "info": "Classic regional band, good for local nets"
+    },
+    "60m": {
+      "bestTime": "Twilight (grayline)",
+      "range": "NVIS and regional, 500-1500 km",
+      "info": "Secondary allocation, good compromise between 80m and 40m"
+    },
+    "40m": {
+      "bestTime": "All day, DX at night",
+      "range": "NVIS during day, DX to 10,000 km at night",
+      "info": "The all-round band - works almost always somehow"
+    },
+    "30m": {
+      "bestTime": "Usable all day",
+      "range": "1000-5000 km",
+      "info": "CW/Digital only, no NVIS, good DX compromise"
+    },
+    "20m": {
+      "bestTime": "Daytime, solar activity",
+      "range": "DX 2000-15,000 km",
+      "info": "THE DX band - worldwide when sunspots are up"
+    },
+    "17m": {
+      "bestTime": "Daytime with good conditions",
+      "range": "DX 2000-10,000 km",
+      "info": "WARC band, less crowded, needs solar activity"
+    },
+    "15m": {
+      "bestTime": "Daytime with high solar activity",
+      "range": "DX 3000-15,000 km",
+      "info": "Excellent during solar maximum"
+    },
+    "12m": {
+      "bestTime": "Midday during solar maximum",
+      "range": "DX, Sporadic-E in summer",
+      "info": "WARC band, opens only with good conditions"
+    },
+    "10m": {
+      "bestTime": "Midday, Sporadic-E in summer",
+      "range": "Local, Sporadic-E EU, F2-DX worldwide",
+      "info": "Highly dependent on solar activity, magic openings possible"
+    },
+    "6m": {
+      "bestTime": "Summer (Sporadic-E), solar maximum",
+      "range": "Local, Sporadic-E 1000-2000 km",
+      "info": "The 'Magic Band' - surprising openings, almost like VHF"
+    },
+    "4m": {
+      "bestTime": "Summer (Sporadic-E)",
+      "range": "Local, Sporadic-E 500-2000 km",
+      "info": "70 MHz band - available in some countries, good Sporadic-E potential"
+    },
+    "2m": {
+      "bestTime": "Tropo: Fall, Sporadic-E: Summer",
+      "range": "Local 50-100 km, Tropo 500+ km",
+      "info": "The classic VHF band - FM, SSB, digital modes, satellites"
+    },
+    "70cm": {
+      "bestTime": "Tropo: Fall, temperature inversions",
+      "range": "Local 30-80 km, Tropo 300+ km",
+      "info": "Very versatile - FM, repeaters, ATV, satellites, EME"
+    },
+    "23cm": {
+      "bestTime": "Stable weather, tropo",
+      "range": "Local 20-50 km, Tropo 200+ km",
+      "info": "Microwave entry point - EME, tropo, ATV, QO-100 uplink"
+    },
+    "13cm": {
+      "bestTime": "Stable weather",
+      "range": "Local 10-30 km, special conditions more",
+      "info": "2.4 GHz - QO-100 downlink, ATV, beacon operation"
+    },
+    "9cm": {
+      "bestTime": "Stable weather",
+      "range": "Local 10-20 km",
+      "info": "3.4 GHz - very specialized, experimental character"
+    },
+    "6cm": {
+      "bestTime": "Stable weather",
+      "range": "Local 5-15 km",
+      "info": "5.7 GHz - WiFi range, experimental use"
+    },
+    "3cm": {
+      "bestTime": "Stable weather",
+      "range": "Local 5-10 km, rain scatter possible",
+      "info": "10 GHz - most popular microwave band, rain scatter, beacons"
+    }
   },
   "tips": {
     "dipole": {
-      "low": "At low height, the dipole radiates steeply upward – ideal for NVIS contacts up to about 500 km.",
-      "medium": "At medium height, a balanced radiation pattern develops for medium distances.",
-      "high": "Mounted high, the radiation angle becomes flatter – better for DX contacts."
+      "low": "Low dipole = high angle radiation. Ideal for NVIS (local contacts up to 500 km). Signal goes nearly straight up and comes back down in the vicinity.",
+      "medium": "Medium height = balanced pattern. Compromise between local and DX. Good for nets and general operation.",
+      "high": "High dipole = low angle radiation. Better for DX, but skip zone nearby. Higher is better for long-distance contacts."
     },
     "vertical": {
-      "low": "The vertical antenna radiates at a low angle by default, ideal for DX.",
-      "medium": "Ground quality strongly affects efficiency – radials improve radiation.",
-      "high": "More height above ground can be counterproductive for vertical antennas."
+      "low": "Verticals radiate at low angles by nature - ideal for DX. But: ground quality is crucial! Without good radials or moist ground, you lose a lot of energy.",
+      "medium": "Radials matter more than height! 16+ radials of 1/4λ dramatically improve efficiency. Saltwater or wet meadow are natural 'radials'.",
+      "high": "More height doesn't help verticals much - the feedpoint should be near ground. Invest in radials rather than a taller mast."
+    },
+    "vertical58": {
+      "low": "The 5/8λ vertical has ~2 dB more gain than 1/4λ due to lower radiation angle. But requires matching network (coil or stub).",
+      "medium": "Typical VHF/UHF antenna: 5/8λ above ground or counterpoise. The gain comes from concentrating radiation in the horizontal plane.",
+      "high": "Unlike the 1/4λ vertical, the 5/8λ always needs a matching network - the impedance is not directly 50 ohms."
+    },
+    "collinear": {
+      "low": "The Collinear stacks multiple radiators vertically for even lower radiation angle and more gain (5-6 dBi).",
+      "medium": "Typical technology for VHF/UHF repeater stations. Consists of multiple 5/8λ elements with phasing sections.",
+      "high": "The more elements, the higher the gain, but also more complex construction. Typically 2-4 elements for amateur use."
     },
     "invertedV": {
-      "low": "The Inverted-V is a compromise between dipole and vertical with more omnidirectional radiation.",
-      "medium": "The opening angle of the legs significantly affects the radiation pattern.",
-      "high": "Mounted higher, the pattern approaches that of a horizontal dipole."
+      "low": "The Inverted-V is a great compromise: needs only one mast in the middle and radiates somewhat more omnidirectionally than a flat dipole.",
+      "medium": "Watch the included angle: 90-120° between legs is ideal. Too flat = too much high-angle radiation, too steep = mechanically unstable.",
+      "high": "When mounted higher, the pattern approaches that of a horizontal dipole. Still retains the advantage of simple construction."
     },
-    "realistic": "In practice, ground, buildings, and trees affect the radiation pattern. This shows typical distortions."
+    "efhw": {
+      "low": "The EFHW (End-Fed Half-Wave) behaves similar to a dipole but needs only one support point. Great for portable setups.",
+      "medium": "Advantage: Multi-band capable with matching unun (49:1). Disadvantage: More sensitive to RF in the shack, good grounding important.",
+      "high": "Mounted high, the EFHW becomes a serious DX antenna. The wire can run at an angle - flexibility is the main advantage."
+    },
+    "randomWire": {
+      "low": "A random wire is the 'emergency antenna' - any wire, hung up somehow. Works surprisingly often, but the pattern is unpredictable.",
+      "medium": "With an antenna tuner, almost anything works. Efficiency varies greatly depending on length and mounting. Experimentation is key!",
+      "high": "Length matters more than shape. 20-40m of wire, as high and clear as possible, gives surprising results even without optimization."
+    },
+    "deltaLoop": {
+      "low": "The Delta Loop has ~1 dB gain over a dipole and radiates at relatively low angles when mounted horizontally - good for DX.",
+      "medium": "Triangle shape: one corner at the mast top, two at the bottom. Needs less height than a dipole for comparable DX performance.",
+      "high": "At full wavelength circumference (e.g., 40m on 40m band), the loop shows its full potential. Also good for receiving."
+    },
+    "g5rv": {
+      "low": "The G5RV is a multiband compromise: a 31m dipole with 10m ladder line as matching. Works on 80-10m with a tuner.",
+      "medium": "No optimal SWR on any band, but 'good enough' everywhere. The ladder line should run as vertically as possible.",
+      "high": "Classic for hams with limited space. Not the best antenna for any single band, but the most practical for all of them."
+    },
+    "yagi2el": {
+      "low": "A 2-element Yagi focuses the signal in one direction (~5 dBd gain). Less power needed, but you must know where to point it!",
+      "medium": "Yagis need height and clear view. A rotator makes them truly useful. For a fixed direction (e.g., USA) also useful without rotator.",
+      "high": "On 20m or higher, the Yagi becomes manageable. On 40m it's a project, on 80m you need a farm."
+    },
+    "yagi3el": {
+      "low": "3 elements = more gain (~8 dBd), narrower beam, better front-to-back ratio. The serious DX antenna.",
+      "medium": "Watch the boom length: about 6m on 20m, about 4m on 15m. Don't underestimate wind and ice loading!",
+      "high": "High on a mast, a 3-element Yagi is a DX machine. Combined with a good location = pile-up killer."
+    },
+    "yagi4el": {
+      "low": "4 elements bring ~9 dBd gain. The boom gets longer, but front-to-back ratio improves further.",
+      "medium": "From 4 elements, wind load becomes a real issue. On 20m already ~8m boom length! Mechanics are as important as electronics.",
+      "high": "Mounted high, an excellent DX antenna. The narrower beam means: aim more precisely, but more signal at the target."
+    },
+    "yagi5el": {
+      "low": "5 elements = ~10 dBd gain. Already a 'large' antenna, typical for contest stations and DXers.",
+      "medium": "Boom gets very long (10m+ on 20m). Needs a sturdy rotator and strong mast. F/B ratio is excellent.",
+      "high": "A 5-element Yagi high on a mast is a pile-up breaking weapon. Serious equipment for serious DX hunters."
+    },
+    "yagi6el": {
+      "low": "6 elements bring ~11 dBd - that's 12× the power of a dipole in one direction! But: size and complexity increase.",
+      "medium": "Typical for 10m/15m bands where the antenna is still manageable. On 20m you need a farm and a crane.",
+      "high": "A 6-element Yagi is contest and DXpedition equipment. Combined with low-band verticals the ultimate setup."
+    },
+    "magloop": {
+      "low": "The Magnetic Loop is small, efficient, and radiates at high angles - ideal for NVIS and space-limited situations (balcony, attic).",
+      "medium": "Very narrowband! Retune after every QSY. But: low-noise reception and no radials needed.",
+      "high": "Can be used indoors, but outdoors is better. Tuning is critical - motorized tuning highly recommended."
+    },
+    "windom": {
+      "low": "The Windom (OCF Dipole) is fed off-center. This allows multiband operation without a tuner. Lower = more high-angle radiation.",
+      "medium": "Feed point is at ~1/3 of total length. Matches 50 ohms with 4:1 or 6:1 balun. Good multiband compromise.",
+      "high": "Mounted high, the Windom behaves like a good DX dipole. The asymmetry adds slight directivity - can be advantage or disadvantage."
+    },
+    "zepp": {
+      "low": "The Zepp antenna is end-fed via ladder line. Low mounting for regional contacts, but it's naturally more of a DX antenna.",
+      "medium": "Advantage: Very efficient as no current needs to flow at the feed point. Works well on harmonics of the fundamental frequency.",
+      "high": "The classic Zepp was the antenna of the Zeppelins. Today popular as multiband DX antenna with low-angle radiation."
+    },
+    "edz": {
+      "low": "The Extended Double Zepp (EDZ) is 1.28λ long - yielding ~4 dBd gain bidirectionally. Needs more space than a dipole.",
+      "medium": "The EDZ radiates in two directions with high gain. Ideal when you have two preferred directions (e.g., USA and Japan).",
+      "high": "Mounted high, the EDZ is one of the best wire antennas for DX. Ladder line feed makes it usable on multiple bands."
+    },
+    "quadLoop": {
+      "low": "The Quad Loop has ~1-2 dB gain over a dipole and better noise rejection. Square or diamond-shaped loop.",
+      "medium": "Polarization depends on feed point: horizontal when fed on side, vertical when fed at corner. Circumference = 1 wavelength.",
+      "high": "Mounted high, the Quad is an excellent DX antenna. Less sensitive to environment than a dipole."
+    },
+    "quad2el": {
+      "low": "The 2-element Quad has ~6-7 dBi gain - about 1 dB more than a 2-element Yagi with larger area but lighter construction.",
+      "medium": "Quad loops can be built from thin wire (fiberglass spreaders). Lighter than aluminum Yagis with comparable performance.",
+      "high": "Mounted high, the 2-el Quad is a real DX performer. Better signal-to-noise ratio than comparable Yagis."
+    },
+    "quad3el": {
+      "low": "3 elements bring the Quad to ~8-9 dBi. The front-to-back ratio is typically better than a 3-el Yagi.",
+      "medium": "Construction with spreaders makes the 3-el Quad more compact than you'd think. Popular DXpedition antenna.",
+      "high": "Mounted high, the 3-element Quad is a serious DX machine with excellent front-to-back ratio and quiet reception."
+    },
+    "sloper": {
+      "low": "The Sloper is a half-wave wire strung at an angle. It radiates toward the slope direction - simple directional antenna with just one mast.",
+      "medium": "Upper end should be at a tall mast, lower end near ground. Typical angle: 30-45° to horizontal.",
+      "high": "A high Sloper can work surprisingly well for DX in one direction. Multiple Slopers on same mast = switchable directions."
+    },
+    "longwire": {
+      "low": "A true long wire is longer than 1 wavelength. This creates multiple radiation lobes - unpredictable but often practical.",
+      "medium": "The longer the wire, the lower the main lobe and more side lobes appear. Good ground or counterpoise important.",
+      "high": "The long wire was the classic DX antenna of the pioneer era. Now mostly replaced by beams, but still effective when space allows."
+    },
+    "cobweb": {
+      "low": "The Cobweb/Spiderweb is a compact multiband antenna. Omnidirectional and lightweight - ideal for restricted rooftops.",
+      "medium": "Works typically on 5 bands (20-10m) with only 3-4m diameter. No rotator needed, but also no gain.",
+      "high": "Mounted high, the Cobweb is a good compromise between size and performance. Not as good as Yagi, but much more inconspicuous."
+    },
+    "hexbeam": {
+      "low": "The Hexbeam is a compact directional antenna that works like a 2-element Yagi. Needs less space than classic beams.",
+      "medium": "Typically 5-band capable with ~4m span. Lighter than a Yagi but similar directivity. Rotator recommended.",
+      "high": "Mounted high, the Hexbeam is a serious DX contender. About 4-5 dBd gain, good front-to-back ratio."
+    },
+    "zs6bkw": {
+      "low": "The ZS6BKW is an optimized G5RV variant with better SWR on multiple bands. 28m dipole with 13.4m ladder line.",
+      "medium": "Works well on 40, 20, 17, 12, and 10m. On 80m and 15m with tuner. Less compromise than original G5RV.",
+      "high": "Mounted high, the ZS6BKW is a solid multiband DX antenna. Optimized dimensions make it more effective than similar designs."
+    },
+    "hb9cv": {
+      "low": "The HB9CV is a compact 2-element directional antenna with phased feed. Designed by Rudolf Baumgartner (HB9CV). Less space than Yagi.",
+      "medium": "Good front-to-back ratio (~20 dB) with compact design. Boom is shorter than a classic 2-el Yagi.",
+      "high": "Mounted high, the HB9CV delivers ~5 dBd gain. Especially popular for portable DXpeditions due to small size."
+    },
+    "fanDipole": {
+      "low": "The fan dipole consists of multiple dipoles of different lengths at the same feed point. Each band has its 'own' dipole.",
+      "medium": "Easy to build: Multiple wire pairs spread fan-like. No tuner needed on resonant bands. Watch for element interaction!",
+      "high": "Mounted high, each dipole element behaves like an individual dipole. Spacing between wires should be 5-10 cm."
+    },
+    "spiderbeam": {
+      "low": "The Spiderbeam is a lightweight 5-band beam with tensioned elements. More compact than classic Yagis but similar performance.",
+      "medium": "Typical for 20-10m with only 5-6m span. Light enough for portable masts. Rotator recommended for full flexibility.",
+      "high": "Mounted high, the Spiderbeam is a serious DX contender. About 5-6 dBd gain on most bands."
+    },
+    "moxon": {
+      "low": "The Moxon Rectangle is a compact 2-element antenna with excellent front-to-back ratio. Less boom length than comparable Yagi.",
+      "medium": "Especially popular for 6m and 2m due to compact size. About 4-5 dBd gain with 25-30 dB F/B ratio.",
+      "high": "Mounted high, ideal for DX in one direction. The bent elements make it mechanically more stable than a Yagi."
+    },
+    "logPeriodic": {
+      "low": "The Log-Periodic (LPDA) is a wideband directional antenna. Lower gain than Yagi but works across multiple octaves.",
+      "medium": "Ideal when a frequency range needs continuous coverage. No tuner needed, constant impedance across range.",
+      "high": "Mounted high, good for monitoring and general operation. Typical 5-7 dBd gain across the entire range."
+    },
+    "jPole": {
+      "low": "The J-Pole is an end-fed half-wave vertical for VHF/UHF. No radials needed! Easy to build from copper pipe or twin-lead.",
+      "medium": "Omnidirectional with about 2-3 dBd gain. Popular portable antenna for 2m and 70cm. The 'J' part is the matching stub.",
+      "high": "Even mounted high, radiation stays low-angle - ideal for range. The Slim-Jim variant is even more compact."
+    },
+    "slimJim": {
+      "low": "The Slim Jim is a J-Pole variant made from folded twin-lead. More compact and lighter than the classic J-Pole.",
+      "medium": "~3-4 dBd gain due to lower radiation angle. Extremely popular as portable or emergency antenna. Rolls up to fit in a pocket.",
+      "high": "Ideal for summits (SOTA) or Field Day. Can be hung from a stick or tree branch. No radials needed."
+    },
+    "superJ": {
+      "low": "The Super-J (or Collinear-J) stacks two half-wave elements for ~5-6 dBi gain.",
+      "medium": "Basically a 'stacked Slim Jim'. Needs a phasing section between elements. More gain than simple J-Pole.",
+      "high": "Excellent portable or permanent antenna when more range than J-Pole is desired. Still no radials needed."
+    },
+    "discone": {
+      "low": "The Discone is a wideband vertical antenna. Frequency range typically 1:10 or more. Ideal for scanners and SDR.",
+      "medium": "Omnidirectional with low-angle radiation. Not optimal on any single band, but unbeatable for wideband reception.",
+      "high": "Height improves range on all frequencies. Popular choice for amateur + aviation + marine in one antenna."
+    },
+    "helix": {
+      "low": "The Helix antenna produces circular polarization - important for satellite work! Multiple turns provide high gain.",
+      "medium": "Typical for satellite uplinks (e.g., QO-100). 6-12 turns yield 10-15 dBi gain. Axially fed.",
+      "high": "For satellite work, the helix should point at the satellite. Tracking or fixed orientation for geostationary satellites."
+    },
+    "patch": {
+      "low": "The Patch antenna is flat and compact - ideal for microwaves. Can be etched on PCB or built from sheet metal.",
+      "medium": "Typical 6-8 dBi gain. Multiple patches as array provide higher gain. Popular for 23cm and above.",
+      "high": "Patch arrays are often used for satellites and EME. The flat form allows discrete installation."
+    },
+    "vivaldi": {
+      "low": "The Vivaldi antenna (TSA) is a wideband slot antenna. Exponential slot provides high bandwidth and gain.",
+      "medium": "Endfire radiation with 8-12 dBi gain. Popular for microwave beacons and EME. Buildable from PCB or sheet metal.",
+      "high": "Arrays of multiple Vivaldis achieve very high gain. Ideal for microwave DX and EME experiments."
+    },
+    "realistic": "In practice, ground, buildings, and trees affect the radiation pattern. This display shows typical distortions - your pattern will look different, but the basic characteristics remain."
+  },
+  "education": {
+    "basics": "Basics",
+    "whatIsShortwave": "What is Shortwave?",
+    "whatIsShortwaveText": "Shortwave (SW) are radio waves between 3 and 30 MHz. The special thing: They can be reflected by the ionosphere and 'skip' around the Earth. That's why you can communicate worldwide with little power - without internet or satellites.",
+    "whatIsIonosphere": "What is the Ionosphere?",
+    "whatIsIonosphereText": "The ionosphere is a layer at 80-400 km altitude where solar radiation 'charges' (ionizes) the air. This charged layer acts like a mirror for shortwave. During the day it's denser (higher frequencies are reflected), at night thinner (lower frequencies pass through).",
+    "whatIsRadiationPattern": "What is a Radiation Pattern?",
+    "whatIsRadiationPatternText": "A radiation pattern shows where your antenna sends its energy. Imagine a lamp: A flashlight radiates focused (like a Yagi), a light bulb in all directions (like a vertical). The diagram shows this 'shape' from above and from the side.",
+    "whatIsWavelength": "What does Wavelength (λ) mean?",
+    "whatIsWavelengthText": "Wavelength is the length of a radio wave. On 20m it's 20 meters, on 40m it's 40 meters. Important: Antenna height and length are often given in wavelengths. A dipole at '0.5λ height' is 10m high on 20m, but 20m high on 40m!",
+    "whyAngle": "Why does the takeoff angle matter?",
+    "whyAngleText": "The ionosphere reflects shortwave back to Earth. Depending on the angle, the signal lands closer (steep angle) or farther away (low angle). For local contacts you need high-angle radiation, for DX low-angle.",
+    "whyHeight": "Why does height matter?",
+    "whyHeightText": "Antenna height (measured in wavelengths) determines the takeoff angle. At λ/4 height, a dipole radiates steeply (NVIS), at λ/2 balanced, at 3/4 λ or more it radiates low (DX).",
+    "whyGround": "Why does ground matter?",
+    "whyGroundText": "The ground acts as a reflector. Good ground (moist, salty) reflects better. For vertical antennas, radials create an artificial 'good ground'. Poor ground 'absorbs' energy.",
+    "whatIsNVIS": "What is NVIS?",
+    "whatIsNVISText": "NVIS (Near Vertical Incidence Skywave) uses nearly vertical radiation. The signal goes up and comes back down within ~500 km - no skip zone. Perfect for emergency communications and regional nets. Only works on lower bands (160m-40m) with low-mounted antennas.",
+    "whatIsDX": "What is DX?",
+    "whatIsDXText": "DX means 'Distance' - long-distance contacts. The lower the takeoff angle, the farther the signal hops. With multiple reflections (multi-hop), worldwide contacts are possible. You need high-mounted antennas or verticals for this.",
+    "whatIsSkipZone": "What is the Skip Zone?",
+    "whatIsSkipZoneText": "Ground wave only reaches a few km. The skywave signal lands only beyond a certain distance. In between is the 'skip zone' - no reception possible. High-angle radiation reduces the skip zone.",
+    "diagramExplain": "Understanding the Diagrams",
+    "azimuthExplain": "The left diagram (azimuth pattern) shows the top view - as if you were looking down at your antenna. The red arrow shows orientation. The blue shape shows in which compass directions the signal is stronger or weaker.",
+    "elevationExplain": "The right diagram (elevation pattern) shows the side view. The horizontal line is the ground. The blue shape shows how steeply the signal goes up. Close to ground = low-angle radiation (good for DX), close to vertical = high-angle radiation (good for NVIS)."
+  },
+  "tutorial": {
+    "title": "Quick Start Guide",
+    "welcome": "Welcome to Antennenblick!",
+    "welcomeText": "This tool helps you understand how your antenna radiates. No formulas, no complex simulations - just visual, intuitive learning.",
+    "step1Title": "1. Choose Your Antenna",
+    "step1Text": "Select the antenna type you have or are planning to build. Each type has different characteristics.",
+    "step2Title": "2. Set the Height",
+    "step2Text": "Height is measured in meters AND wavelengths. The same physical height behaves differently on different bands!",
+    "step3Title": "3. Select the Band",
+    "step3Text": "Different bands have different propagation characteristics. Lower bands (160m-40m) work better for NVIS, higher bands (20m-6m) for DX.",
+    "step4Title": "4. Read the Diagrams",
+    "step4Text": "The left diagram shows the top view (where the signal goes horizontally). The right shows the side view (how steep the signal goes up).",
+    "step5Title": "5. Understand the Results",
+    "step5Text": "The explanation panel tells you what your setup is best for - NVIS, regional, or DX contacts.",
+    "step5bTitle": "5b. Specifications & Parameters",
+    "step5bText": "The specifications show length, gain, and impedance for your antenna. Some antennas (e.g., Inverted-V, Verticals) let you adjust additional parameters like apex angle or radial count.",
+    "step6Title": "6. Export & Share",
+    "step6Text": "Use 'Export' to save diagrams as images. 'Share' creates a link to your current configuration.",
+    "step7Title": "7. Compare Antennas",
+    "step7Text": "Click 'Compare' to see two antennas side by side. Perfect for evaluating different options.",
+    "step8Title": "8. Calculator & Map",
+    "step8Text": "The 'Calculator' computes antenna lengths for different frequencies. The 'Map' shows your estimated range on a world map.",
+    "step9Title": "9. Solar Data",
+    "step9Text": "Under 'Solar' you'll find current solar activity data (SFI, K-Index) and band conditions - important for DX!",
+    "step10Title": "10. Favorites & Quiz",
+    "step10Text": "Save your favorite configurations as 'Favorites'. Test your antenna knowledge with the 'Quiz'.",
+    "gotIt": "Got it!",
+    "help": "Help",
+    "showTutorial": "Show Tutorial"
   },
   "directions": {
     "n": "N",
@@ -68,5 +531,250 @@
     "sw": "SW",
     "w": "W",
     "nw": "NW"
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "feedback": "Feedback"
+  },
+  "compare": {
+    "toggle": "Compare",
+    "antenna1": "Antenna A",
+    "antenna2": "Antenna B",
+    "title": "Antenna Comparison"
+  },
+  "share": {
+    "button": "Share",
+    "title": "Share Configuration",
+    "copied": "Link copied to clipboard!",
+    "copyUrl": "URL to share:"
+  },
+  "export": {
+    "button": "Image",
+    "title": "Export as Image",
+    "downloading": "Downloading image..."
+  },
+  "favorites": {
+    "button": "Favorites",
+    "title": "Favorites",
+    "saveCurrent": "Save Current Configuration",
+    "namePlaceholder": "Name for the favorite",
+    "save": "Save",
+    "cancel": "Cancel",
+    "addFavorite": "Save as Favorite",
+    "savedFavorites": "Saved Favorites",
+    "noFavorites": "No favorites saved",
+    "load": "Load",
+    "delete": "Delete",
+    "hint": "Favorites are stored locally in your browser."
+  },
+  "solar": {
+    "button": "Solar",
+    "title": "Solar Data",
+    "loading": "Loading solar data...",
+    "fetchError": "Could not fetch live data. Showing sample data.",
+    "sfi": "Solar Flux Index",
+    "kIndex": "K-Index",
+    "aIndex": "A-Index",
+    "sunspots": "Sunspots",
+    "bandConditions": "Band Conditions",
+    "band": "Band",
+    "day": "Day",
+    "night": "Night",
+    "whatMeans": "What does this mean?",
+    "sfiExplain": "Measures solar activity. Higher = better for higher bands (10m-20m). Below 70 is poor, above 150 is excellent.",
+    "kIndexExplain": "Geomagnetic activity. Lower is better (0-2 = quiet). Above 5 means likely disturbances and blackouts.",
+    "aIndexExplain": "24-hour average of geomagnetic activity. Below 10 is good, above 30 is disturbing.",
+    "refresh": "Refresh",
+    "lastUpdate": "Last Update",
+    "dataSource": "Data from"
+  },
+  "rangeMap": {
+    "button": "Map",
+    "title": "Range Map",
+    "skipZone": "Skip Zone",
+    "singleHop": "Single Hop",
+    "multiHop": "Multi-Hop",
+    "takeoffAngle": "Takeoff Angle",
+    "clickHelp": "Click on the map to set your location",
+    "useMyLocation": "Use My Location",
+    "yourLocation": "Your Location",
+    "disclaimer": "Simplified visualization - actual range depends on propagation conditions, time of day, and solar activity."
+  },
+  "calculator": {
+    "button": "Calc",
+    "title": "Antenna Calculator",
+    "frequency": "Frequency",
+    "velocityFactor": "Velocity Factor",
+    "velocityHint": "(0.95 for wire, 0.66 for coax)",
+    "wavelength": "Wavelength",
+    "dipole": "Dipole",
+    "vertical": "Vertical",
+    "loop": "Loop",
+    "yagi": "Yagi",
+    "totalLength": "Total Length",
+    "perSide": "Per Side",
+    "quarterWave": "1/4 λ Vertical",
+    "fiveEighths": "5/8 λ Vertical",
+    "radials": "Radial Length",
+    "fullWaveLoop": "Full-Wave Loop",
+    "deltaSide": "Delta Loop Side",
+    "quadSide": "Quad Loop Side",
+    "reflector": "Reflector",
+    "driven": "Driven Element",
+    "director": "Director",
+    "spacing": "Element Spacing",
+    "formula": "Formula",
+    "dipoleDesc": "Half-wave dipole: total length and per side",
+    "verticalDesc": "Vertical antennas: 1/4λ, 5/8λ, and radials",
+    "loopDesc": "Loop antennas: circumference and side lengths",
+    "yagiDesc": "Typical Yagi element lengths (wire, adjust for construction)"
+  },
+  "imprint": {
+    "title": "Imprint",
+    "info": "Information according to § 5 ECG and § 25 MedienG (Austrian law)",
+    "operator": "Operator",
+    "operatorName": "Michael Linder",
+    "operatorCallsign": "OE8YML",
+    "operatorAddress": "Nötsch 219, 9611 Nötsch",
+    "operatorCountry": "Austria",
+    "contact": "Contact",
+    "contactEmail": "oe8yml@rednil.at",
+    "liabilityTitle": "Liability for Content",
+    "liabilityText": "The contents of this website have been created with the greatest care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. This website serves exclusively educational purposes and visualizes antenna radiation patterns.",
+    "externalLinksTitle": "Liability for External Links",
+    "externalLinksText": "This website contains links to external search engines. The respective provider is always responsible for the content of linked pages. If we become aware of any legal violations, we will remove such links immediately.",
+    "copyrightTitle": "Copyright",
+    "copyrightText": "The content and works created by the operator on this website are subject to Austrian copyright law.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerText": "The displayed radiation patterns are simplified visualizations for educational purposes. They do not replace professional antenna simulation (e.g., NEC, EZNEC)."
+  },
+  "quiz": {
+    "button": "Quiz",
+    "title": "Quiz - Test Your Knowledge",
+    "question": "Question",
+    "correct": "correct",
+    "perfect": "Perfect! You're an antenna expert!",
+    "good": "Very good! You know your stuff.",
+    "ok": "Not bad! Keep practicing.",
+    "tryAgain": "Try again with the tutorial!",
+    "restart": "Play Again",
+    "close": "Close",
+    "next": "Next Question",
+    "showResult": "Show Result",
+    "q1Question": "Which antenna height (in wavelengths) is best for NVIS operation?",
+    "q1Opt1": "λ/4 (0.25 wavelength)",
+    "q1Opt2": "λ/2 (0.5 wavelength)",
+    "q1Opt3": "1 λ (one wavelength)",
+    "q1Opt4": "2 λ (two wavelengths)",
+    "q1Explanation": "For NVIS (steep radiation) the dipole should be low - about λ/4. This creates high-angle radiation that bounces back almost vertically from the ionosphere.",
+    "q2Question": "What happens to the takeoff angle when you raise your dipole higher?",
+    "q2Opt1": "The angle becomes steeper (more NVIS)",
+    "q2Opt2": "The angle becomes lower (more DX)",
+    "q2Opt3": "The angle stays the same",
+    "q2Opt4": "The antenna stops radiating",
+    "q2Explanation": "Higher = lower takeoff angle = better DX. The ground acts as a reflector, and the reflection angle changes with height.",
+    "q3Question": "Which band is best for DX during low sunspot cycle?",
+    "q3Opt1": "10 meters",
+    "q3Opt2": "20 meters",
+    "q3Opt3": "40 meters",
+    "q3Opt4": "80 meters",
+    "q3Explanation": "40 meters works well for DX even during low solar activity. 10 and 20 meters need more sunspots.",
+    "q4Question": "What is the 'Skip Zone' (Dead Zone)?",
+    "q4Opt1": "An area without antenna reception",
+    "q4Opt2": "The area between ground wave and first ionospheric hop",
+    "q4Opt3": "The null points in the antenna pattern",
+    "q4Opt4": "Areas with poor ground",
+    "q4Explanation": "The Skip Zone is where ground wave doesn't reach and skywave hasn't landed yet.",
+    "q5Question": "Why does a vertical antenna need good radials?",
+    "q5Opt1": "For better tuning",
+    "q5Opt2": "To serve as artificial ground and reduce losses",
+    "q5Opt3": "For more gain",
+    "q5Opt4": "For narrower bandwidth",
+    "q5Explanation": "Radials form an artificial conductive ground. Without them, current flows through poor earth.",
+    "q6Question": "What is typical for a Yagi antenna?",
+    "q6Opt1": "Omnidirectional radiation",
+    "q6Opt2": "Directional focus with gain",
+    "q6Opt3": "Steep radiation for NVIS",
+    "q6Opt4": "Works without height",
+    "q6Explanation": "A Yagi focuses the signal in one direction through its directors and reflectors.",
+    "q7Question": "Which K-Index is good for DX?",
+    "q7Opt1": "K = 0-2 (quiet)",
+    "q7Opt2": "K = 3-4 (unsettled)",
+    "q7Opt3": "K = 5-6 (storm)",
+    "q7Opt4": "K = 7+ (severe storm)",
+    "q7Explanation": "Low K values (0-2) mean quiet geomagnetic conditions = stable ionosphere.",
+    "q8Question": "What does a high SFI (Solar Flux Index) mean?",
+    "q8Opt1": "Poor conditions on all bands",
+    "q8Opt2": "Better conditions on higher bands (10m-20m)",
+    "q8Opt3": "Only ground wave possible",
+    "q8Opt4": "Heavy QRM",
+    "q8Explanation": "High SFI (>100) means more solar activity = denser ionosphere = higher MUF.",
+    "q9Question": "Which takeoff angle is optimal for DX contacts over 3000 km?",
+    "q9Opt1": "5-15 degrees",
+    "q9Opt2": "30-45 degrees",
+    "q9Opt3": "60-75 degrees",
+    "q9Opt4": "80-90 degrees",
+    "q9Explanation": "Low angles (5-15°) allow long hops via the ionosphere.",
+    "q10Question": "What is the advantage of a Magnetic Loop antenna?",
+    "q10Opt1": "High gain",
+    "q10Opt2": "Wideband operation",
+    "q10Opt3": "Compact size and low-noise reception",
+    "q10Opt4": "Easy tuning",
+    "q10Explanation": "Magnetic Loops are small (good for limited space) and receive less local noise."
+  },
+  "glossary": {
+    "title": "Glossary - Terms Explained Simply",
+    "basicsTitle": "Basic Terms",
+    "termShortwave": "Shortwave (SW)",
+    "defShortwave": "Radio waves between 3 and 30 MHz (wavelengths 100m to 10m). Can be reflected by the ionosphere to communicate worldwide.",
+    "termWavelength": "Wavelength (λ)",
+    "defWavelength": "The length of one complete radio wave. On the 20m band it's 20 meters, on 40m it's 40 meters. Antenna dimensions are often given as fractions of λ.",
+    "termIonosphere": "Ionosphere",
+    "defIonosphere": "Charged air layer at 80-400 km altitude. Reflects shortwave back to Earth. Denser during day (higher frequencies), thinner at night (lower frequencies work better).",
+    "termPropagation": "Propagation",
+    "defPropagation": "How radio waves travel from transmitter to receiver. Depends on frequency, time of day, solar activity, and antenna.",
+    "patternsTitle": "Radiation Patterns",
+    "termAzimuth": "Azimuth Pattern (Horizontal)",
+    "defAzimuth": "Shows from above which compass directions the antenna radiates to. Like a floor plan of antenna radiation.",
+    "termElevation": "Elevation Pattern (Vertical)",
+    "defElevation": "Shows from the side how steeply the antenna radiates upward. Low = DX, steep = NVIS.",
+    "termMainLobe": "Main Lobe",
+    "defMainLobe": "The direction where the antenna radiates most strongly. Clearly defined on directional antennas.",
+    "termTakeoffAngle": "Takeoff Angle",
+    "defTakeoffAngle": "The angle to the horizontal at which most signal is radiated. Low (5-20°) for DX, high (60-90°) for NVIS.",
+    "modesTitle": "Operating Modes",
+    "defNVIS": "Near Vertical Incidence Skywave - signal goes nearly straight up and comes back down within ~500 km radius. No skip zone, ideal for regional nets.",
+    "defDX": "Distance - long-distance contacts over great distances. The lower the takeoff angle, the farther. With multi-hop, worldwide possible.",
+    "termSkipZone": "Skip Zone (Dead Zone)",
+    "defSkipZone": "The area between the end of ground wave and beginning of sky wave where no signal arrives. Size depends on takeoff angle.",
+    "termGroundwave": "Ground Wave",
+    "defGroundwave": "Signal that travels along the ground. Range only a few km, but always present.",
+    "termSkywave": "Sky Wave",
+    "defSkywave": "Signal that goes to the ionosphere and is reflected back. Enables long-distance contacts.",
+    "antennaTitle": "Antenna Terms",
+    "termGain": "Gain (dBd/dBi)",
+    "defGain": "How much stronger an antenna radiates in one direction compared to a reference. dBd = vs. dipole, dBi = vs. isotropic. 3 dB more = double power.",
+    "termRadials": "Radials",
+    "defRadials": "Wires at the base of a vertical antenna serving as artificial ground. More radials = better efficiency. 16-32 typical.",
+    "termBalun": "Balun",
+    "defBalun": "BALanced-UNbalanced - converts symmetrical antenna (dipole) to asymmetrical cable (coax). Prevents common-mode currents.",
+    "termSWR": "SWR (Standing Wave Ratio)",
+    "defSWR": "Shows how well the antenna is matched. 1:1 perfect, under 1.5:1 good, over 3:1 bad. High SWR = power is reflected back.",
+    "termFB": "Front-to-Back Ratio (F/B)",
+    "defFB": "For directional antennas: How much stronger the signal goes forward vs. backward. 20 dB F/B means 100x stronger forward."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "The protection of your personal data is important to us. This privacy policy informs you about data processing on this website.",
+    "noDataTitle": "No Data Collection",
+    "noDataText": "This website is a pure client-side tool and does not collect, store, or process any personal data.",
+    "noDataList": "No forms, no cookies (except language preference), no tracking, no server-side processing.",
+    "localStorageTitle": "Local Storage",
+    "localStorageText": "The only stored information is your language preference and whether you've seen the tutorial. This data is saved locally in your browser and not transmitted to servers.",
+    "cloudflareTitle": "Cloudflare",
+    "cloudflareText": "This website is served via Cloudflare. Cloudflare may process technically necessary connection data.",
+    "contactTitle": "Contact",
+    "contactText": "For questions about data processing, contact:"
   }
 }

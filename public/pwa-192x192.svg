@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <rect width="192" height="192" fill="#1a1d23" rx="24"/>
+  <g transform="translate(96, 96)">
+    <!-- Antenna tower -->
+    <line x1="0" y1="-60" x2="0" y2="50" stroke="#4a9eff" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-25" y1="50" x2="25" y2="50" stroke="#4a9eff" stroke-width="6" stroke-linecap="round"/>
+    <line x1="-15" y1="30" x2="15" y2="30" stroke="#4a9eff" stroke-width="4" stroke-linecap="round"/>
+    <line x1="-10" y1="10" x2="10" y2="10" stroke="#4a9eff" stroke-width="4" stroke-linecap="round"/>
+    <!-- Radiation waves -->
+    <path d="M -40 -40 Q -60 0 -40 40" fill="none" stroke="#ff9f43" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <path d="M -55 -50 Q -80 0 -55 50" fill="none" stroke="#ff9f43" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    <path d="M 40 -40 Q 60 0 40 40" fill="none" stroke="#26de81" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 55 -50 Q 80 0 55 50" fill="none" stroke="#26de81" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+    <!-- Top antenna element -->
+    <circle cx="0" cy="-60" r="8" fill="#ff6b4a"/>
+  </g>
+</svg>

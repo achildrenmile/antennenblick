@@ -7,24 +7,127 @@
     "switch": "English",
     "current": "Deutsch"
   },
+  "theme": {
+    "toggle": "Theme wechseln",
+    "dark": "Dunkel",
+    "light": "Hell",
+    "system": "System"
+  },
   "antenna": {
     "title": "Antennentyp",
-    "dipole": "Halbwellen-Dipol (horizontal)",
-    "vertical": "Vertikale Groundplane (1/4 λ)",
-    "invertedV": "Inverted-V Dipol"
+    "dipole": "Halbwellen-Dipol",
+    "vertical": "Vertikale (1/4 λ GP)",
+    "vertical58": "Vertikale (5/8 λ)",
+    "collinear": "Collinear-Vertikal",
+    "invertedV": "Inverted-V",
+    "efhw": "EFHW (Endgespeist)",
+    "randomWire": "Langdraht",
+    "deltaLoop": "Delta-Loop",
+    "g5rv": "G5RV",
+    "yagi2el": "Yagi 2 Elemente",
+    "yagi3el": "Yagi 3 Elemente",
+    "yagi4el": "Yagi 4 Elemente",
+    "yagi5el": "Yagi 5 Elemente",
+    "yagi6el": "Yagi 6 Elemente",
+    "magloop": "Magnet-Loop",
+    "windom": "Windom / OCF-Dipol",
+    "zepp": "Zeppelin / End-Fed",
+    "edz": "EDZ (Ext. Double Zepp)",
+    "quadLoop": "Quad-Loop",
+    "quad2el": "Quad 2 Elemente",
+    "quad3el": "Quad 3 Elemente",
+    "sloper": "Sloper (1/2 λ)",
+    "longwire": "Langdraht (>1λ)",
+    "cobweb": "Cobweb / Spiderweb",
+    "hexbeam": "Hexbeam",
+    "zs6bkw": "ZS6BKW",
+    "hb9cv": "HB9CV",
+    "fanDipole": "Fächerdipol",
+    "spiderbeam": "Spiderbeam",
+    "moxon": "Moxon Rectangle",
+    "logPeriodic": "Log-Periodic (LPDA)",
+    "jPole": "J-Pole",
+    "slimJim": "Slim Jim",
+    "superJ": "Super-J (Collinear J)",
+    "discone": "Discone",
+    "helix": "Helix-Antenne",
+    "patch": "Patch-Antenne",
+    "vivaldi": "Vivaldi-Antenne",
+    "moreInfo": "Mehr Info & Bauanleitung"
+  },
+  "antennaSearch": {
+    "searchLabel": "Bauanleitung suchen",
+    "dipole": "Halbwellen Dipol Bauanleitung Amateurfunk",
+    "vertical": "Groundplane Antenne Bauanleitung",
+    "vertical58": "5/8 Lambda Vertikal Antenne Bauanleitung",
+    "collinear": "Collinear Vertikal Antenne Bauanleitung",
+    "invertedV": "Inverted V Antenne Bauanleitung",
+    "efhw": "EFHW End Fed Half Wave Bauanleitung",
+    "randomWire": "Langdrahtantenne Bauanleitung",
+    "deltaLoop": "Delta Loop Antenne Bauanleitung",
+    "g5rv": "G5RV Antenne Bauanleitung",
+    "yagi2el": "2 Element Yagi Bauanleitung DK7ZB",
+    "yagi3el": "3 Element Yagi Bauanleitung DK7ZB",
+    "yagi4el": "4 Element Yagi Bauanleitung DK7ZB",
+    "yagi5el": "5 Element Yagi Bauanleitung",
+    "yagi6el": "6 Element Yagi Bauanleitung",
+    "magloop": "Magnetic Loop Bauanleitung",
+    "windom": "Windom Antenne OCF Dipol Bauanleitung",
+    "zepp": "Zepp Antenne Bauanleitung",
+    "edz": "Extended Double Zepp EDZ Bauanleitung",
+    "quadLoop": "Quad Loop Antenne Bauanleitung",
+    "quad2el": "2 Element Quad Antenne Bauanleitung",
+    "quad3el": "3 Element Quad Antenne Bauanleitung",
+    "sloper": "Half Wave Sloper Bauanleitung",
+    "longwire": "Langdraht Antenne Bauanleitung",
+    "cobweb": "Cobweb Antenne Bauanleitung",
+    "hexbeam": "Hexbeam Antenne Bauanleitung",
+    "zs6bkw": "ZS6BKW Antenne Bauanleitung",
+    "hb9cv": "HB9CV Antenne Bauanleitung",
+    "fanDipole": "Fächerdipol Multiband Bauanleitung",
+    "spiderbeam": "Spiderbeam Antenne Bauanleitung",
+    "moxon": "Moxon Rectangle Antenne Bauanleitung",
+    "logPeriodic": "Log Periodic LPDA Antenne Bauanleitung",
+    "jPole": "J-Pole Antenne VHF UHF Bauanleitung",
+    "slimJim": "Slim Jim Antenne VHF UHF Bauanleitung",
+    "superJ": "Super J Collinear Antenne Bauanleitung",
+    "discone": "Discone Breitband Antenne Bauanleitung",
+    "helix": "Helix Antenne Satellit Bauanleitung",
+    "patch": "Patch Antenne Mikrowelle Bauanleitung",
+    "vivaldi": "Vivaldi TSA Antenne Bauanleitung"
   },
   "controls": {
     "height": "Antennenhöhe",
     "heightUnit": "m",
     "band": "Band",
     "orientation": "Ausrichtung",
-    "orientationUnit": "°"
+    "orientationUnit": "°",
+    "ground": "Bodenqualität",
+    "groundPoor": "Schlecht (trocken, felsig)",
+    "groundAverage": "Durchschnitt (Garten)",
+    "groundGood": "Gut (feucht, Radiale)",
+    "groundSaltwater": "Salzwasser (Küste)",
+    "terrain": "Gelände",
+    "terrainFlat": "Flach",
+    "terrainHilly": "Hügelig",
+    "terrainMountain": "Bergig",
+    "terrainUrban": "Städtisch",
+    "apexAngle": "Schenkelwinkel",
+    "radials": "Radiale"
+  },
+  "bandCategories": {
+    "lf": "LF (Langwelle)",
+    "mf": "MF (Mittelwelle)",
+    "hf": "HF (Kurzwelle)",
+    "vhf": "VHF",
+    "uhf": "UHF",
+    "shf": "SHF (Mikrowelle)"
   },
   "view": {
     "azimuth": "Horizontaldiagramm",
     "elevation": "Vertikaldiagramm",
-    "azimuthTooltip": "Blick von oben auf die Antenne",
-    "elevationTooltip": "Seitenansicht der Abstrahlung"
+    "azimuthTooltip": "Blick von oben: Wohin strahlt die Antenne?",
+    "elevationTooltip": "Seitenansicht: Wie steil strahlt die Antenne ab?"
   },
   "reality": {
     "title": "Realitätscheck",
@@ -36,28 +139,388 @@
   "explanation": {
     "mainLobe": "Hauptkeule",
     "null": "Auslöschung",
-    "nvis": "NVIS (Nahfeld)",
-    "dx": "DX (Weitverkehr)",
-    "highAngle": "Hoher Abstrahlwinkel",
-    "lowAngle": "Flacher Abstrahlwinkel"
+    "nvis": "NVIS",
+    "dx": "DX",
+    "highAngle": "Steilstrahlung",
+    "lowAngle": "Flachstrahlung",
+    "coverage": "Reichweite",
+    "skipZone": "Tote Zone"
+  },
+  "specs": {
+    "title": "Antennen-Spezifikationen",
+    "length": "Länge",
+    "height": "Höhe",
+    "radials": "Radiale",
+    "gain": "Gewinn",
+    "impedance": "Impedanz",
+    "bandwidth": "Bandbreite"
+  },
+  "coverage": {
+    "nvis": "NVIS-Modus: Signal wird steil nach oben abgestrahlt und von der Ionosphäre fast senkrecht zurückgeworfen. Ideal für Verbindungen bis ~500 km ohne tote Zone.",
+    "regional": "Regionale Reichweite: Mittlerer Abstrahlwinkel ermöglicht Verbindungen zwischen 300-1500 km. Kleine tote Zone möglich.",
+    "dx": "DX-Modus: Flacher Abstrahlwinkel für Weitverbindungen 1000-4000 km. Tote Zone im Nahbereich.",
+    "worldwide": "Weltweiter DX: Sehr flacher Winkel ermöglicht Mehrfachsprünge über die Ionosphäre. Reichweite bis 20.000 km, aber große tote Zone.",
+    "noNvis": "Dieses Band unterstützt kein NVIS. Die Frequenz ist zu hoch für steile Reflexion.",
+    "estimated": "Geschätzte Reichweite",
+    "to": "bis",
+    "km": "km",
+    "deadZone": "Tote Zone"
+  },
+  "bands": {
+    "2200m": {
+      "bestTime": "Nachts",
+      "range": "Regional bis 1000 km",
+      "info": "LF-Band - extrem große Antennen erforderlich, sehr spezialisiert"
+    },
+    "630m": {
+      "bestTime": "Nachts",
+      "range": "Regional bis 2000 km",
+      "info": "MF-Band - lange Antennen, gute Bodenwellenausbreitung"
+    },
+    "160m": {
+      "bestTime": "Nachts, besonders im Winter",
+      "range": "Regional bis 2000 km nachts, NVIS tagsüber",
+      "info": "Das 'Top Band' - atmosphärisches Rauschen hoch, braucht große Antennen"
+    },
+    "80m": {
+      "bestTime": "Nachts und Dämmerung",
+      "range": "NVIS tagsüber (~500 km), DX nachts bis 3000 km",
+      "info": "Klassisches Nahverkehrsband, gut für OE-Runden"
+    },
+    "60m": {
+      "bestTime": "Dämmerung (Grayline)",
+      "range": "NVIS und regional, 500-1500 km",
+      "info": "Sekundärzuweisung, guter Kompromiss zwischen 80m und 40m"
+    },
+    "40m": {
+      "bestTime": "Ganztägig, DX nachts",
+      "range": "NVIS tagsüber, DX bis 10.000 km nachts",
+      "info": "Das Allround-Band - funktioniert fast immer irgendwie"
+    },
+    "30m": {
+      "bestTime": "Ganztägig nutzbar",
+      "range": "1000-5000 km",
+      "info": "Nur CW/Digi, kein NVIS, guter Kompromiss für DX"
+    },
+    "20m": {
+      "bestTime": "Tagsüber, Sonnenaktivität",
+      "range": "DX 2000-15.000 km",
+      "info": "DAS DX-Band - bei Sonnenflecken weltweit offen"
+    },
+    "17m": {
+      "bestTime": "Tagsüber bei guten Bedingungen",
+      "range": "DX 2000-10.000 km",
+      "info": "WARC-Band, weniger überlaufen, braucht Sonnenaktivität"
+    },
+    "15m": {
+      "bestTime": "Tagsüber bei hoher Sonnenaktivität",
+      "range": "DX 3000-15.000 km",
+      "info": "Hervorragend bei Sonnenfleckenmaximum"
+    },
+    "12m": {
+      "bestTime": "Mittags bei Sonnenmaximum",
+      "range": "DX, Sporadic-E im Sommer",
+      "info": "WARC-Band, öffnet nur bei guten Bedingungen"
+    },
+    "10m": {
+      "bestTime": "Mittags, Sporadic-E im Sommer",
+      "range": "Lokal, Sporadic-E EU, F2-DX weltweit",
+      "info": "Stark von Sonnenaktivität abhängig, magische Öffnungen möglich"
+    },
+    "6m": {
+      "bestTime": "Sommer (Sporadic-E), Sonnenmaximum",
+      "range": "Lokal, Sporadic-E 1000-2000 km",
+      "info": "Das 'Magic Band' - überraschende Öffnungen, fast wie UKW"
+    },
+    "4m": {
+      "bestTime": "Sommer (Sporadic-E)",
+      "range": "Lokal, Sporadic-E 500-2000 km",
+      "info": "70 MHz Band - in Österreich erlaubt, gute Sporadic-E Möglichkeiten"
+    },
+    "2m": {
+      "bestTime": "Tropo: Herbst, Sporadic-E: Sommer",
+      "range": "Lokal 50-100 km, Tropo 500+ km",
+      "info": "Das klassische UKW-Band - FM, SSB, Digimodes, Satelliten"
+    },
+    "70cm": {
+      "bestTime": "Tropo: Herbst, Inversionslagen",
+      "range": "Lokal 30-80 km, Tropo 300+ km",
+      "info": "Sehr vielseitig - FM, Repeater, ATV, Satelliten, EME"
+    },
+    "23cm": {
+      "bestTime": "Stabile Wetterlage, Tropo",
+      "range": "Lokal 20-50 km, Tropo 200+ km",
+      "info": "Mikrowellen-Einstieg - EME, Tropo, ATV, QO-100 Uplink"
+    },
+    "13cm": {
+      "bestTime": "Stabile Wetterlage",
+      "range": "Lokal 10-30 km, spezielle Bedingungen mehr",
+      "info": "2.4 GHz - QO-100 Downlink, ATV, Bakenbetrieb"
+    },
+    "9cm": {
+      "bestTime": "Stabile Wetterlage",
+      "range": "Lokal 10-20 km",
+      "info": "3.4 GHz - sehr spezialisiert, experimenteller Charakter"
+    },
+    "6cm": {
+      "bestTime": "Stabile Wetterlage",
+      "range": "Lokal 5-15 km",
+      "info": "5.7 GHz - WiFi-Bereich, experimentelle Nutzung"
+    },
+    "3cm": {
+      "bestTime": "Stabile Wetterlage",
+      "range": "Lokal 5-10 km, Regenscatter möglich",
+      "info": "10 GHz - das populärste Mikrowellenband, Regenscatter, Bakenbetrieb"
+    }
   },
   "tips": {
     "dipole": {
-      "low": "Bei niedriger Aufhängung strahlt der Dipol steil nach oben ab – ideal für NVIS-Verbindungen bis ca. 500 km.",
-      "medium": "In mittlerer Höhe bildet sich ein ausgewogenes Strahlungsdiagramm für mittlere Entfernungen.",
-      "high": "Hoch aufgehängt wird der Abstrahlwinkel flacher – besser für DX-Verbindungen."
+      "low": "Niedriger Dipol = steile Abstrahlung. Ideal für NVIS (Nahverkehr bis 500 km). Das Signal geht fast senkrecht hoch und kommt im Umkreis wieder runter.",
+      "medium": "Mittlere Höhe = ausgewogenes Diagramm. Kompromiss zwischen Nah- und Weitverkehr. Gut für Rundsprüche und allgemeinen Betrieb.",
+      "high": "Hoher Dipol = flache Abstrahlung. Besser für DX, aber tote Zone im Nahbereich. Je höher, desto besser für Weitverbindungen."
     },
     "vertical": {
-      "low": "Die Vertikalantenne strahlt grundsätzlich flach ab, ideal für DX.",
-      "medium": "Die Bodenqualität beeinflusst die Effizienz stark – Radiale verbessern die Abstrahlung.",
-      "high": "Mehr Höhe über Grund kann bei Vertikalantennen kontraproduktiv sein."
+      "low": "Die Vertikale strahlt grundsätzlich flach ab - ideal für DX. Aber: Bodenqualität ist entscheidend! Ohne gute Radiale oder feuchten Boden verlierst du viel Energie.",
+      "medium": "Radiale sind wichtiger als Höhe! 16+ Radiale à 1/4λ verbessern die Effizienz dramatisch. Salzwasser oder feuchte Wiese sind natürliche 'Radiale'.",
+      "high": "Mehr Höhe bringt bei Vertikalen wenig - der Fußpunkt sollte nahe am Boden sein. Investiere lieber in Radiale als in einen höheren Mast."
+    },
+    "vertical58": {
+      "low": "Die 5/8λ-Vertikale hat ~2 dB mehr Gewinn als die 1/4λ durch flachere Abstrahlung. Braucht aber Anpassnetzwerk (Spule oder Stub).",
+      "medium": "Typische VHF/UHF-Antenne: 5/8λ über Boden oder Counterpoise. Der Gewinn kommt durch konzentriertere Abstrahlung in Horizontalebene.",
+      "high": "Im Gegensatz zur 1/4λ-Vertikale braucht die 5/8λ immer ein Anpassnetzwerk - die Impedanz ist nicht direkt 50 Ohm."
+    },
+    "collinear": {
+      "low": "Die Collinear stapelt mehrere Strahler übereinander für noch flachere Abstrahlung und mehr Gewinn (5-6 dBi).",
+      "medium": "Typische Technik für VHF/UHF Repeaterstationen. Besteht aus mehreren 5/8λ Elementen mit Phasengliedern.",
+      "high": "Je mehr Elemente, desto höher der Gewinn, aber auch komplexer der Aufbau. Typisch 2-4 Elemente für Amateuranwendungen."
     },
     "invertedV": {
-      "low": "Der Inverted-V ist ein Kompromiss zwischen Dipol und Vertikaler mit omnidirektionalerer Abstrahlung.",
-      "medium": "Der Öffnungswinkel der Schenkel beeinflusst das Strahlungsdiagramm erheblich.",
-      "high": "Höher aufgehängt nähert sich das Diagramm dem eines horizontalen Dipols an."
+      "low": "Der Inverted-V ist ein super Kompromiss: braucht nur einen Mast in der Mitte und strahlt etwas omnidirektionaler als ein flacher Dipol.",
+      "medium": "Öffnungswinkel beachten: 90-120° zwischen den Schenkeln ist ideal. Zu flach = zu viel Steilstrahlung, zu steil = mechanisch instabil.",
+      "high": "Höher aufgehängt nähert sich das Diagramm dem eines horizontalen Dipols. Trotzdem bleibt der Vorteil des einfachen Aufbaus."
     },
-    "realistic": "In der Praxis beeinflussen Boden, Gebäude und Bäume das Strahlungsdiagramm. Die Darstellung zeigt typische Verzerrungen."
+    "efhw": {
+      "low": "Die EFHW (Endgespeist) verhält sich ähnlich wie ein Dipol, braucht aber nur einen Aufhängepunkt. Gut für portable Setups.",
+      "medium": "Vorteil: Multiband-fähig mit passendem Unun (49:1). Nachteil: Empfindlicher gegen HF im Shack, gute Erdung wichtig.",
+      "high": "Hoch aufgehängt wird die EFHW zur ernsthaften DX-Antenne. Der Draht kann schräg verlaufen - Flexibilität ist der Hauptvorteil."
+    },
+    "randomWire": {
+      "low": "Ein Langdraht ist die 'Notantenne' - irgendein Draht, irgendwie aufgehängt. Funktioniert überraschend oft, aber das Diagramm ist unvorhersagbar.",
+      "medium": "Mit Antennentuner geht fast alles. Die Effizienz variiert stark je nach Länge und Aufhängung. Experimentieren ist angesagt!",
+      "high": "Länge ist wichtiger als Form. 20-40m Draht, möglichst hoch und frei, bringt auch ohne Optimierung erstaunliche Ergebnisse."
+    },
+    "deltaLoop": {
+      "low": "Der Delta-Loop hat ~1 dB Gewinn gegenüber dem Dipol und strahlt bei horizontaler Aufhängung relativ flach ab - gut für DX.",
+      "medium": "Dreiecksform: eine Ecke oben am Mast, zwei unten. Braucht weniger Höhe als ein Dipol für vergleichbare DX-Eigenschaften.",
+      "high": "Bei voller Wellenlänge Umfang (z.B. 40m auf 40m-Band) zeigt der Loop sein volles Potenzial. Auch gut für Empfang."
+    },
+    "g5rv": {
+      "low": "Der G5RV ist ein Multiband-Kompromiss: ein 31m Dipol mit 10m Hühnerleiter als Transformation. Funktioniert auf 80-10m mit Tuner.",
+      "medium": "Kein optimales SWR auf irgendeinem Band, aber überall 'gut genug'. Die Hühnerleiter sollte möglichst senkrecht abgehen.",
+      "high": "Klassiker für Funkamateure mit begrenztem Platz. Nicht die beste Antenne für ein Band, aber die praktischste für alle."
+    },
+    "yagi2el": {
+      "low": "Eine 2-Element-Yagi bündelt das Signal in eine Richtung (~5 dBd Gewinn). Weniger Leistung nötig, aber du musst wissen wohin!",
+      "medium": "Die Yagi braucht Höhe und freie Sicht. Ein Rotor macht sie erst richtig nützlich. Für feste Richtung (z.B. USA) auch ohne Rotor sinnvoll.",
+      "high": "Auf 20m oder höher wird die Yagi handhabbar. Auf 40m schon ein Projekt, auf 80m braucht man einen Bauernhof."
+    },
+    "yagi3el": {
+      "low": "3 Elemente = mehr Gewinn (~8 dBd), schmalere Keule, besseres Vor/Rück-Verhältnis. Die ernsthafte DX-Antenne.",
+      "medium": "Boom-Länge beachten: auf 20m ca. 6m, auf 15m ca. 4m. Wind- und Eislast nicht unterschätzen!",
+      "high": "Hoch oben auf dem Mast ist eine 3-Element-Yagi eine DX-Maschine. Kombiniert mit gutem Standort = Pile-Up-Killer."
+    },
+    "yagi4el": {
+      "low": "4 Elemente bringen ~9 dBd Gewinn. Der Boom wird länger, aber das Vor/Rück-Verhältnis verbessert sich weiter.",
+      "medium": "Ab 4 Elementen wird die Windlast ein echtes Thema. Auf 20m schon ~8m Boomlänge! Mechanik ist genauso wichtig wie Elektrik.",
+      "high": "Hoch montiert eine ausgezeichnete DX-Antenne. Die engere Keule bedeutet: genauer zielen, aber mehr Signal am Ziel."
+    },
+    "yagi5el": {
+      "low": "5 Elemente = ~10 dBd Gewinn. Schon eine 'große' Antenne, typisch für Contest-Stationen und DXer.",
+      "medium": "Der Boom wird sehr lang (10m+ auf 20m). Braucht einen stabilen Rotor und einen kräftigen Mast. Das F/B-Verhältnis ist exzellent.",
+      "high": "Eine 5-Element-Yagi hoch auf dem Mast ist eine Pile-Up-Brechende Waffe. Ernsthaftes Equipment für ernsthafte DX-Jäger."
+    },
+    "yagi6el": {
+      "low": "6 Elemente bringen ~11 dBd - das ist 12× die Leistung eines Dipols in eine Richtung! Aber: Größe und Komplexität steigen.",
+      "medium": "Typisch für 10m/15m-Bänder, wo die Antenne noch handhabbar ist. Auf 20m brauchst du einen Bauernhof und einen Kran.",
+      "high": "Eine 6-Element-Yagi ist Contest- und DXpedition-Equipment. Kombiniert mit Low-Band-Vertikalen das ultimative Setup."
+    },
+    "magloop": {
+      "low": "Die Magnet-Loop ist klein, effizient und strahlt steil ab - ideal für NVIS und Platz-beschränkte Situationen (Balkon, Dachboden).",
+      "medium": "Sehr schmalbandig! Nach jedem QSY nachstimmen. Dafür: rauscharmer Empfang und keine Radiale nötig.",
+      "high": "Kann indoor verwendet werden, aber outdoor ist besser. Die Abstimmung ist kritisch - motorische Abstimmung sehr empfehlenswert."
+    },
+    "windom": {
+      "low": "Der Windom (OCF-Dipol) wird außermittig gespeist. Dadurch funktioniert er auf mehreren Bändern ohne Tuner. Niedriger = mehr Steilstrahlung.",
+      "medium": "Der Speisepunkt liegt bei ~1/3 der Gesamtlänge. Mit 4:1 oder 6:1 Balun an 50 Ohm anpassbar. Guter Kompromiss für Mehrbandbetrieb.",
+      "high": "Hoch montiert verhält sich der Windom wie ein guter DX-Dipol. Die Asymmetrie bringt leichte Richtungswirkung - kann Vorteil oder Nachteil sein."
+    },
+    "zepp": {
+      "low": "Die Zepp-Antenne wird am Ende über Hühnerleiter gespeist. Niedrig montiert für regionale Verbindungen, aber sie ist von Natur aus eher eine DX-Antenne.",
+      "medium": "Vorteil: Sehr effizient, da kein Strom am Speisepunkt fließen muss. Funktioniert gut auf Vielfachen der Grundfrequenz.",
+      "high": "Die klassische Zepp war die Antenne der Zeppeline. Heute beliebt als Mehrband-DX-Antenne mit flacher Abstrahlung."
+    },
+    "edz": {
+      "low": "Die Extended Double Zepp (EDZ) ist 1.28λ lang - das ergibt ~4 dBd Gewinn bidirektional. Braucht mehr Platz als ein Dipol.",
+      "medium": "Die EDZ strahlt in zwei Richtungen mit hohem Gewinn ab. Ideal wenn du zwei bevorzugte Richtungen hast (z.B. USA und Japan).",
+      "high": "Hoch montiert ist die EDZ eine der besten Drahtantennen für DX. Die Hühnerleiter-Speisung macht sie auf mehreren Bändern nutzbar."
+    },
+    "quadLoop": {
+      "low": "Der Quad-Loop hat ~1-2 dB Gewinn über dem Dipol und bessere Unterdrückung von Störungen. Quadratische oder rautenförmige Schleife.",
+      "medium": "Die Polarisation hängt von der Speisung ab: horizontal an der Seite, vertikal an der Ecke. Umfang = 1 Wellenlänge.",
+      "high": "Hoch montiert ist der Quad eine ausgezeichnete DX-Antenne. Weniger empfindlich gegen Umgebungseinflüsse als ein Dipol."
+    },
+    "quad2el": {
+      "low": "Die 2-Element-Quad hat ~6-7 dBi Gewinn - etwa 1 dB mehr als eine 2-Element-Yagi bei größerer Fläche aber leichterer Bauweise.",
+      "medium": "Quad-Loops können aus dünnem Draht gebaut werden (Fiberglas-Spreizer). Leichter als Alu-Yagis bei vergleichbarer Performance.",
+      "high": "Hoch montiert ist die 2-El-Quad ein echter DX-Performer. Besseres Signal-zu-Rausch-Verhältnis als vergleichbare Yagis."
+    },
+    "quad3el": {
+      "low": "3 Elemente bringen die Quad auf ~8-9 dBi. Das Vor/Rück-Verhältnis ist typisch besser als bei einer 3-El-Yagi.",
+      "medium": "Die Bauweise mit Spreizern macht die 3-El-Quad kompakter als man denkt. Beliebte DXpedition-Antenne.",
+      "high": "Hoch montiert ist die 3-Element-Quad eine ernsthafte DX-Maschine mit exzellentem Vor/Rück-Verhältnis und leisem Empfang."
+    },
+    "sloper": {
+      "low": "Der Sloper ist ein schräg abgespannter Halbwellen-Draht. Er strahlt in Richtung der Neigung ab - einfache Richtantenne mit nur einem Mast.",
+      "medium": "Der obere Punkt sollte an einem hohen Mast sein, das untere Ende nahe am Boden. Typischer Winkel: 30-45° zur Horizontalen.",
+      "high": "Ein hoher Sloper kann überraschend gut für DX in eine Richtung funktionieren. Mehrere Sloper am selben Mast = schaltbare Richtungen."
+    },
+    "longwire": {
+      "low": "Ein echter Langdraht ist länger als 1 Wellenlänge. Das ergibt mehrere Abstrahlkeulen - unvorhersagbar, aber oft praktisch.",
+      "medium": "Je länger der Draht, desto flacher die Hauptkeule und desto mehr Nebenkeulen entstehen. Gute Erdung oder Gegengewicht wichtig.",
+      "high": "Der Langdraht war die klassische DX-Antenne der Pionierzeit. Heute eher durch Beams ersetzt, aber immer noch effektiv wenn Platz vorhanden."
+    },
+    "cobweb": {
+      "low": "Die Cobweb/Spiderweb ist eine kompakte Mehrband-Antenne. Omnidirektional und leicht - ideal für Dächer mit Einschränkungen.",
+      "medium": "Funktioniert typisch auf 5 Bändern (20-10m) mit einem Durchmesser von nur 3-4m. Kein Rotor nötig, aber auch kein Gewinn.",
+      "high": "Hoch montiert ist die Cobweb ein guter Kompromiss zwischen Größe und Leistung. Nicht so gut wie Yagi, aber viel unauffälliger."
+    },
+    "hexbeam": {
+      "low": "Der Hexbeam ist eine kompakte Richtantenne, die wie eine 2-Element-Yagi funktioniert. Braucht weniger Platz als klassische Beams.",
+      "medium": "Typisch 5-Band-fähig mit ~4m Spannweite. Leichter als eine Yagi, aber ähnliche Richtwirkung. Rotor empfohlen.",
+      "high": "Hoch montiert ist der Hexbeam ein ernsthafter DX-Konkurrent. Etwa 4-5 dBd Gewinn, gutes Vor/Rück-Verhältnis."
+    },
+    "zs6bkw": {
+      "low": "Der ZS6BKW ist eine optimierte G5RV-Variante mit besseren SWR-Werten auf mehreren Bändern. 28m Dipol mit 13,4m Hühnerleiter.",
+      "medium": "Funktioniert gut auf 40, 20, 17, 12 und 10m. Auf 80m und 15m mit Tuner. Weniger Kompromiss als der Original-G5RV.",
+      "high": "Hoch montiert ist der ZS6BKW eine solide Mehrband-DX-Antenne. Die optimierten Maße machen ihn effektiver als ähnliche Designs."
+    },
+    "hb9cv": {
+      "low": "Die HB9CV ist eine kompakte 2-Element-Richtantenne mit Phasenspeisung. Entwickelt von Rudolf Baumgartner (HB9CV). Weniger Platz als Yagi.",
+      "medium": "Gutes Vor/Rück-Verhältnis (~20 dB) bei kompakter Bauform. Der Boom ist kürzer als bei einer klassischen 2-El-Yagi.",
+      "high": "Hoch montiert liefert die HB9CV ~5 dBd Gewinn. Besonders beliebt für portable DXpeditionen wegen der geringen Größe."
+    },
+    "fanDipole": {
+      "low": "Der Fächerdipol besteht aus mehreren Dipolen unterschiedlicher Länge am gleichen Speisepunkt. Jedes Band hat seinen 'eigenen' Dipol.",
+      "medium": "Einfach zu bauen: Mehrere Drahtpaare fächerförmig gespannt. Kein Tuner nötig auf den Resonanzbändern. Interaktion der Elemente beachten!",
+      "high": "Hoch montiert verhält sich jedes Dipolelement wie ein einzelner Dipol. Die Abstände zwischen den Drähten sollten 5-10 cm sein."
+    },
+    "spiderbeam": {
+      "low": "Der Spiderbeam ist ein leichter 5-Band-Beam mit gespannten Elementen. Kompakter als klassische Yagis, aber ähnliche Performance.",
+      "medium": "Typisch für 20-10m mit nur 5-6m Spannweite. Leicht genug für portable Masten. Rotor empfohlen für volle Flexibilität.",
+      "high": "Hoch montiert ist der Spiderbeam ein ernsthafter DX-Konkurrent. Etwa 5-6 dBd Gewinn auf den meisten Bändern."
+    },
+    "moxon": {
+      "low": "Das Moxon Rectangle ist eine kompakte 2-Element-Antenne mit hervorragendem Vor/Rück-Verhältnis. Weniger Boomlänge als vergleichbare Yagi.",
+      "medium": "Besonders beliebt für 6m und 2m wegen der kompakten Bauform. Etwa 4-5 dBd Gewinn mit 25-30 dB F/B-Verhältnis.",
+      "high": "Hoch montiert ideal für DX in eine Richtung. Die gebogenen Elemente machen sie mechanisch stabiler als eine Yagi."
+    },
+    "logPeriodic": {
+      "low": "Die Log-Periodic (LPDA) ist eine Breitband-Richtantenne. Geringerer Gewinn als Yagi, aber funktioniert über mehrere Oktaven.",
+      "medium": "Ideal wenn ein Frequenzbereich kontinuierlich abgedeckt werden soll. Kein Tuner nötig, konstante Impedanz.",
+      "high": "Hoch montiert gut für Monitoring und allgemeinen Betrieb. Typisch 5-7 dBd Gewinn über den gesamten Bereich."
+    },
+    "jPole": {
+      "low": "Der J-Pole ist eine endgespeiste Halbwellen-Vertikale für VHF/UHF. Keine Radiale nötig! Einfach zu bauen aus Kupferrohr oder Zwillingslitze.",
+      "medium": "Omnidirektional mit etwa 2-3 dBd Gewinn. Beliebte portable Antenne für 2m und 70cm. Der 'J'-Teil ist das Anpass-Stub.",
+      "high": "Auch hoch montiert bleibt die Abstrahlung flach - ideal für Reichweite. Die Slim-Jim-Variante ist noch kompakter."
+    },
+    "slimJim": {
+      "low": "Der Slim Jim ist eine J-Pole Variante aus gefalteter Zwillingslitze. Kompakter und leichter als der klassische J-Pole.",
+      "medium": "~3-4 dBd Gewinn durch flachere Abstrahlung. Extrem beliebt als portable oder Notfunk-Antenne. Passt aufgerollt in die Tasche.",
+      "high": "Ideal für Berggipfel (SOTA) oder Field Day. Kann an einem Stock oder Ast aufgehängt werden. Keine Radiale nötig."
+    },
+    "superJ": {
+      "low": "Die Super-J (oder Collinear-J) stapelt zwei Halbwellen-Elemente übereinander für ~5-6 dBi Gewinn.",
+      "medium": "Quasi ein 'gestapelter Slim Jim'. Braucht ein Phasenglied zwischen den Elementen. Mehr Gewinn als einfacher J-Pole.",
+      "high": "Ausgezeichnete portable oder Festantenne wenn mehr Reichweite als mit J-Pole gewünscht ist. Immer noch keine Radiale nötig."
+    },
+    "discone": {
+      "low": "Die Discone ist eine Breitband-Vertikalantenne. Frequenzbereich typisch 1:10 oder mehr. Ideal für Scanner und SDR.",
+      "medium": "Omnidirektional mit flacher Abstrahlung. Nicht optimal auf einem einzelnen Band, aber unschlagbar für Breitband-Empfang.",
+      "high": "Die Höhe verbessert die Reichweite auf allen Frequenzen. Beliebte Wahl für Amateurfunk + Flugfunk + Seefunk in einem."
+    },
+    "helix": {
+      "low": "Die Helix-Antenne erzeugt zirkulare Polarisation - wichtig für Satellitenfunk! Mehrere Windungen ergeben hohen Gewinn.",
+      "medium": "Typisch für Satelliten-Uplinks (z.B. QO-100). 6-12 Windungen ergeben 10-15 dBi Gewinn. Axial gespeist.",
+      "high": "Für Satellitenarbeit sollte die Helix Richtung Satellit zeigen. Tracking oder feste Ausrichtung auf geostationäre Satelliten."
+    },
+    "patch": {
+      "low": "Die Patch-Antenne ist flach und kompakt - ideal für Mikrowellen. Kann auf Platinen geätzt oder aus Blech gebaut werden.",
+      "medium": "Typisch 6-8 dBi Gewinn. Mehrere Patches als Array ergeben höheren Gewinn. Beliebt für 23cm und höher.",
+      "high": "Patch-Arrays werden oft für Satelliten und EME verwendet. Die flache Bauform erlaubt diskrete Installation."
+    },
+    "vivaldi": {
+      "low": "Die Vivaldi-Antenne (TSA) ist eine Breitband-Schlitz-Antenne. Exponentieller Schlitz ergibt hohe Bandbreite und Gewinn.",
+      "medium": "Endfire-Abstrahlung mit 8-12 dBi Gewinn. Beliebt für Mikrowellen-Baken und EME. Aus PCB oder Blech baubar.",
+      "high": "Arrays aus mehreren Vivaldis erreichen sehr hohen Gewinn. Ideal für Mikrowellen-DX und EME-Experimente."
+    },
+    "realistic": "In der Praxis beeinflussen Boden, Gebäude und Bäume das Strahlungsdiagramm. Diese Darstellung zeigt typische Verzerrungen - dein Diagramm wird anders aussehen, aber die Grundcharakteristik bleibt."
+  },
+  "education": {
+    "basics": "Grundlagen",
+    "whatIsShortwave": "Was ist Kurzwelle?",
+    "whatIsShortwaveText": "Kurzwelle (KW) sind Radiowellen zwischen 3 und 30 MHz. Das Besondere: Sie können von der Ionosphäre reflektiert werden und so um die Erde 'springen'. Deshalb kannst du mit wenig Leistung weltweit funken - ganz ohne Internet oder Satelliten.",
+    "whatIsIonosphere": "Was ist die Ionosphäre?",
+    "whatIsIonosphereText": "Die Ionosphäre ist eine Schicht in 80-400 km Höhe, wo Sonnenstrahlung die Luft 'auflädt' (ionisiert). Diese geladene Schicht wirkt wie ein Spiegel für Kurzwellen. Tagsüber ist sie dichter (höhere Frequenzen werden reflektiert), nachts dünner (niedrigere Frequenzen gehen durch).",
+    "whatIsRadiationPattern": "Was ist ein Abstrahldiagramm?",
+    "whatIsRadiationPatternText": "Ein Abstrahldiagramm zeigt, wohin deine Antenne ihre Energie schickt. Stell dir eine Lampe vor: Eine Taschenlampe strahlt gebündelt (wie eine Yagi), eine Glühbirne in alle Richtungen (wie eine Vertikale). Das Diagramm zeigt diese 'Form' von oben und von der Seite.",
+    "whatIsWavelength": "Was bedeutet Wellenlänge (λ)?",
+    "whatIsWavelengthText": "Die Wellenlänge ist die Länge einer Radiowelle. Auf 20m beträgt sie 20 Meter, auf 40m sind es 40 Meter. Wichtig: Antennenhöhe und -länge werden oft in Wellenlängen angegeben. Ein Dipol bei '0.5λ Höhe' ist auf 20m also 10m hoch, auf 40m aber 20m hoch!",
+    "whyAngle": "Warum ist der Abstrahlwinkel wichtig?",
+    "whyAngleText": "Die Ionosphäre reflektiert Kurzwellen zurück zur Erde. Je nach Winkel landet das Signal näher (steiler Winkel) oder weiter weg (flacher Winkel). Für lokale Verbindungen brauchst du Steilstrahlung, für DX Flachstrahlung.",
+    "whyHeight": "Warum ist die Höhe wichtig?",
+    "whyHeightText": "Die Antennenhöhe (in Wellenlängen gemessen) bestimmt den Abstrahlwinkel. Bei λ/4 Höhe strahlt ein Dipol steil (NVIS), bei λ/2 ausgewogen, bei 3/4 λ oder mehr flach (DX).",
+    "whyGround": "Warum ist der Boden wichtig?",
+    "whyGroundText": "Der Boden wirkt als Reflektor. Guter Boden (feucht, salzig) reflektiert besser. Für Vertikalantennen sind Radiale ein künstlicher 'guter Boden'. Schlechter Boden 'schluckt' Energie.",
+    "whatIsNVIS": "Was ist NVIS?",
+    "whatIsNVISText": "NVIS (Near Vertical Incidence Skywave) nutzt fast senkrechte Abstrahlung. Das Signal geht hoch und kommt im Umkreis von ~500 km wieder runter - ohne tote Zone. Perfekt für Notfunk und regionale Netze. Funktioniert nur auf niedrigen Bändern (160m-40m) mit niedrig montierten Antennen.",
+    "whatIsDX": "Was ist DX?",
+    "whatIsDXText": "DX bedeutet 'Distance' - Weitverbindungen. Je flacher der Abstrahlwinkel, desto weiter springt das Signal. Mit Mehrfachreflexion (Multi-Hop) sind weltweite Verbindungen möglich. Du brauchst dafür hoch montierte Antennen oder Vertikale.",
+    "whatIsSkipZone": "Was ist die Tote Zone?",
+    "whatIsSkipZoneText": "Die Bodenwelle reicht nur wenige km. Das Raumwellensignal landet erst ab einer bestimmten Entfernung. Dazwischen ist die 'Tote Zone' - kein Empfang möglich. Steilstrahlung verringert die tote Zone.",
+    "diagramExplain": "Die Diagramme verstehen",
+    "azimuthExplain": "Das linke Diagramm (Horizontaldiagramm) zeigt die Draufsicht - als würdest du von oben auf deine Antenne schauen. Der rote Pfeil zeigt die Ausrichtung. Die blaue Form zeigt, in welche Himmelsrichtungen das Signal stärker oder schwächer ist.",
+    "elevationExplain": "Das rechte Diagramm (Vertikaldiagramm) zeigt die Seitenansicht. Die horizontale Linie ist der Boden. Die blaue Form zeigt, wie steil das Signal nach oben geht. Nahe am Boden = flache Abstrahlung (gut für DX), nahe an der Senkrechten = steile Abstrahlung (gut für NVIS)."
+  },
+  "tutorial": {
+    "title": "Schnellstart-Anleitung",
+    "welcome": "Willkommen bei Antennenblick!",
+    "welcomeText": "Dieses Tool hilft dir zu verstehen, wie deine Antenne abstrahlt. Keine Formeln, keine komplexen Simulationen - nur visuelles, intuitives Lernen.",
+    "step1Title": "1. Wähle deine Antenne",
+    "step1Text": "Wähle den Antennentyp, den du hast oder bauen möchtest. Jeder Typ hat andere Eigenschaften.",
+    "step2Title": "2. Stelle die Höhe ein",
+    "step2Text": "Die Höhe wird in Metern UND Wellenlängen gemessen. Dieselbe physische Höhe verhält sich auf verschiedenen Bändern unterschiedlich!",
+    "step3Title": "3. Wähle das Band",
+    "step3Text": "Verschiedene Bänder haben unterschiedliche Ausbreitungseigenschaften. Niedrigere Bänder (160m-40m) funktionieren besser für NVIS, höhere (20m-6m) für DX.",
+    "step4Title": "4. Lies die Diagramme",
+    "step4Text": "Das linke Diagramm zeigt die Draufsicht (wohin das Signal horizontal geht). Das rechte zeigt die Seitenansicht (wie steil das Signal nach oben geht).",
+    "step5Title": "5. Verstehe die Ergebnisse",
+    "step5Text": "Das Erklärungsfeld sagt dir, wofür dein Setup am besten geeignet ist - NVIS, regional oder DX-Verbindungen.",
+    "step5bTitle": "5b. Spezifikationen & Parameter",
+    "step5bText": "Die Spezifikationen zeigen Länge, Gewinn und Impedanz für deine Antenne. Bei manchen Antennen (z.B. Inverted-V, Vertikale) kannst du zusätzliche Parameter wie Schenkelwinkel oder Radialanzahl einstellen.",
+    "step6Title": "6. Export & Teilen",
+    "step6Text": "Mit 'Export' kannst du die Diagramme als Bild speichern. 'Teilen' erstellt einen Link zu deiner aktuellen Konfiguration.",
+    "step7Title": "7. Antennen vergleichen",
+    "step7Text": "Klicke auf 'Vergleichen' um zwei Antennen nebeneinander zu sehen. Perfekt um verschiedene Optionen zu evaluieren.",
+    "step8Title": "8. Rechner & Karte",
+    "step8Text": "Der 'Rechner' berechnet Antennenlängen für verschiedene Frequenzen. Die 'Karte' zeigt deine geschätzte Reichweite auf einer Weltkarte.",
+    "step9Title": "9. Solar-Daten",
+    "step9Text": "Unter 'Solar' findest du aktuelle Sonnenaktivitätsdaten (SFI, K-Index) und Band-Bedingungen - wichtig für DX!",
+    "step10Title": "10. Favoriten & Quiz",
+    "step10Text": "Speichere deine Lieblingskonfigurationen als 'Favoriten'. Mit dem 'Quiz' kannst du dein Wissen über Antennen testen.",
+    "gotIt": "Verstanden!",
+    "help": "Hilfe",
+    "showTutorial": "Tutorial anzeigen"
   },
   "directions": {
     "n": "N",
@@ -68,5 +531,250 @@
     "sw": "SW",
     "w": "W",
     "nw": "NW"
+  },
+  "footer": {
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "feedback": "Feedback"
+  },
+  "compare": {
+    "toggle": "Vergleichen",
+    "antenna1": "Antenne A",
+    "antenna2": "Antenne B",
+    "title": "Antennen-Vergleich"
+  },
+  "share": {
+    "button": "Teilen",
+    "title": "Konfiguration teilen",
+    "copied": "Link in Zwischenablage kopiert!",
+    "copyUrl": "URL zum Teilen:"
+  },
+  "export": {
+    "button": "Bild",
+    "title": "Als Bild exportieren",
+    "downloading": "Bild wird heruntergeladen..."
+  },
+  "favorites": {
+    "button": "Favoriten",
+    "title": "Favoriten",
+    "saveCurrent": "Aktuelle Konfiguration speichern",
+    "namePlaceholder": "Name für den Favoriten",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "addFavorite": "Als Favorit speichern",
+    "savedFavorites": "Gespeicherte Favoriten",
+    "noFavorites": "Keine Favoriten gespeichert",
+    "load": "Laden",
+    "delete": "Löschen",
+    "hint": "Favoriten werden lokal in Ihrem Browser gespeichert."
+  },
+  "solar": {
+    "button": "Solar",
+    "title": "Solar-Daten",
+    "loading": "Lade Solar-Daten...",
+    "fetchError": "Konnte keine Live-Daten abrufen. Zeige Beispieldaten.",
+    "sfi": "Solar Flux Index",
+    "kIndex": "K-Index",
+    "aIndex": "A-Index",
+    "sunspots": "Sonnenflecken",
+    "bandConditions": "Band-Bedingungen",
+    "band": "Band",
+    "day": "Tag",
+    "night": "Nacht",
+    "whatMeans": "Was bedeutet das?",
+    "sfiExplain": "Misst die Sonnenaktivität. Höher = besser für höhere Bänder (10m-20m). Unter 70 ist schlecht, über 150 ist exzellent.",
+    "kIndexExplain": "Geomagnetische Aktivität. Niedriger ist besser (0-2 = ruhig). Ab 5 sind Störungen und Ausfälle wahrscheinlich.",
+    "aIndexExplain": "24-Stunden-Durchschnitt der geomagnetischen Aktivität. Unter 10 ist gut, über 30 ist störend.",
+    "refresh": "Aktualisieren",
+    "lastUpdate": "Letztes Update",
+    "dataSource": "Daten von"
+  },
+  "rangeMap": {
+    "button": "Karte",
+    "title": "Reichweiten-Karte",
+    "skipZone": "Tote Zone",
+    "singleHop": "Einfach-Hop",
+    "multiHop": "Multi-Hop",
+    "takeoffAngle": "Abstrahlwinkel",
+    "clickHelp": "Klicke auf die Karte, um deinen Standort zu setzen",
+    "useMyLocation": "Meinen Standort verwenden",
+    "yourLocation": "Dein Standort",
+    "disclaimer": "Vereinfachte Darstellung - tatsächliche Reichweite hängt von Ausbreitungsbedingungen, Tageszeit und Sonnenaktivität ab."
+  },
+  "calculator": {
+    "button": "Rechner",
+    "title": "Antennen-Rechner",
+    "frequency": "Frequenz",
+    "velocityFactor": "Verkürzungsfaktor",
+    "velocityHint": "(0.95 für Draht, 0.66 für Koax)",
+    "wavelength": "Wellenlänge",
+    "dipole": "Dipol",
+    "vertical": "Vertikal",
+    "loop": "Loop",
+    "yagi": "Yagi",
+    "totalLength": "Gesamtlänge",
+    "perSide": "Pro Seite",
+    "quarterWave": "1/4 λ Vertikal",
+    "fiveEighths": "5/8 λ Vertikal",
+    "radials": "Radiallänge",
+    "fullWaveLoop": "Vollwellen-Loop",
+    "deltaSide": "Delta-Loop Seite",
+    "quadSide": "Quad-Loop Seite",
+    "reflector": "Reflektor",
+    "driven": "Strahler",
+    "director": "Direktor",
+    "spacing": "Elementabstand",
+    "formula": "Formel",
+    "dipoleDesc": "Halbwellen-Dipol: Gesamtlänge und Länge pro Seite",
+    "verticalDesc": "Vertikalantennen: 1/4λ, 5/8λ und Radiale",
+    "loopDesc": "Loop-Antennen: Umfang und Seitenlängen",
+    "yagiDesc": "Typische Yagi-Elementlängen (Draht, anpassen nach Bauart)"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "info": "Angaben gemäß § 5 ECG und § 25 MedienG",
+    "operator": "Betreiber",
+    "operatorName": "Michael Linder",
+    "operatorCallsign": "OE8YML",
+    "operatorAddress": "Nötsch 219, 9611 Nötsch",
+    "operatorCountry": "Österreich",
+    "contact": "Kontakt",
+    "contactEmail": "oe8yml@rednil.at",
+    "liabilityTitle": "Haftung für Inhalte",
+    "liabilityText": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr. Diese Website dient ausschließlich Bildungszwecken und visualisiert Antennen-Abstrahldiagramme.",
+    "externalLinksTitle": "Haftung für externe Links",
+    "externalLinksText": "Diese Website enthält Links zu externen Suchmaschinen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.",
+    "copyrightTitle": "Urheberrecht",
+    "copyrightText": "Die durch den Betreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem österreichischen Urheberrecht.",
+    "disclaimerTitle": "Hinweis",
+    "disclaimerText": "Die dargestellten Abstrahldiagramme sind vereinfachte Visualisierungen zu Bildungszwecken. Sie ersetzen keine professionelle Antennensimulation (z.B. NEC, EZNEC)."
+  },
+  "quiz": {
+    "button": "Quiz",
+    "title": "Quiz - Teste dein Wissen",
+    "question": "Frage",
+    "correct": "richtig",
+    "perfect": "Perfekt! Du bist ein Antennen-Experte!",
+    "good": "Sehr gut! Du kennst dich gut aus.",
+    "ok": "Nicht schlecht! Weiter üben.",
+    "tryAgain": "Versuch es nochmal mit dem Tutorial!",
+    "restart": "Nochmal spielen",
+    "close": "Schließen",
+    "next": "Nächste Frage",
+    "showResult": "Ergebnis anzeigen",
+    "q1Question": "Welche Antennenhöhe (in Wellenlängen) ist am besten für NVIS-Betrieb?",
+    "q1Opt1": "λ/4 (0.25 Wellenlänge)",
+    "q1Opt2": "λ/2 (0.5 Wellenlänge)",
+    "q1Opt3": "1 λ (eine Wellenlänge)",
+    "q1Opt4": "2 λ (zwei Wellenlängen)",
+    "q1Explanation": "Für NVIS (steile Abstrahlung) sollte der Dipol niedrig sein - etwa λ/4. Das erzeugt Steilstrahlung, die von der Ionosphäre fast senkrecht zurückkommt.",
+    "q2Question": "Was passiert mit dem Abstrahlwinkel, wenn du deinen Dipol höher aufhängst?",
+    "q2Opt1": "Der Winkel wird steiler (mehr NVIS)",
+    "q2Opt2": "Der Winkel wird flacher (mehr DX)",
+    "q2Opt3": "Der Winkel bleibt gleich",
+    "q2Opt4": "Die Antenne strahlt nicht mehr",
+    "q2Explanation": "Höher = flacher Abstrahlwinkel = besseres DX. Der Boden wirkt als Reflektor, und der Reflexionswinkel ändert sich mit der Höhe.",
+    "q3Question": "Welches Band ist am besten für DX bei niedrigem Sonnenfleckenzyklus?",
+    "q3Opt1": "10 Meter",
+    "q3Opt2": "20 Meter",
+    "q3Opt3": "40 Meter",
+    "q3Opt4": "80 Meter",
+    "q3Explanation": "40 Meter funktioniert auch bei niedriger Sonnenaktivität gut für DX. 10 und 20 Meter brauchen mehr Sonnenflecken.",
+    "q4Question": "Was ist die 'Tote Zone' (Skip Zone)?",
+    "q4Opt1": "Ein Bereich ohne Antennenempfang",
+    "q4Opt2": "Der Bereich zwischen Bodenwelle und erstem Ionosphärensprung",
+    "q4Opt3": "Die Nullstellen im Antennendiagramm",
+    "q4Opt4": "Bereiche mit schlechtem Boden",
+    "q4Explanation": "Die Tote Zone ist der Bereich, wo die Bodenwelle nicht mehr hinkommt und die Raumwelle noch nicht landet.",
+    "q5Question": "Warum braucht eine Vertikalantenne gute Radiale?",
+    "q5Opt1": "Für bessere Abstimmung",
+    "q5Opt2": "Um als künstlicher Boden zu dienen und Verluste zu reduzieren",
+    "q5Opt3": "Für mehr Gewinn",
+    "q5Opt4": "Für schmalere Bandbreite",
+    "q5Explanation": "Radiale bilden einen künstlichen leitfähigen Boden. Ohne sie fließt der Strom durch den schlechten Erdboden.",
+    "q6Question": "Was ist typisch für eine Yagi-Antenne?",
+    "q6Opt1": "Omnidirektionale Abstrahlung",
+    "q6Opt2": "Bündelung in eine Richtung mit Gewinn",
+    "q6Opt3": "Steile Abstrahlung für NVIS",
+    "q6Opt4": "Funktioniert ohne Höhe",
+    "q6Explanation": "Eine Yagi bündelt das Signal in eine Richtung durch ihre Direktoren und Reflektoren.",
+    "q7Question": "Welcher K-Index ist gut für DX?",
+    "q7Opt1": "K = 0-2 (ruhig)",
+    "q7Opt2": "K = 3-4 (unsettled)",
+    "q7Opt3": "K = 5-6 (storm)",
+    "q7Opt4": "K = 7+ (severe storm)",
+    "q7Explanation": "Niedrige K-Werte (0-2) bedeuten ruhige geomagnetische Bedingungen = stabile Ionosphäre.",
+    "q8Question": "Was bedeutet ein hoher SFI (Solar Flux Index)?",
+    "q8Opt1": "Schlechte Bedingungen auf allen Bändern",
+    "q8Opt2": "Bessere Bedingungen auf höheren Bändern (10m-20m)",
+    "q8Opt3": "Nur Bodenwelle möglich",
+    "q8Opt4": "Starkes QRM",
+    "q8Explanation": "Hoher SFI (>100) bedeutet mehr Sonnenaktivität = dichtere Ionosphäre = höhere MUF.",
+    "q9Question": "Welcher Abstrahlwinkel ist für DX-Verbindungen über 3000 km optimal?",
+    "q9Opt1": "5-15 Grad",
+    "q9Opt2": "30-45 Grad",
+    "q9Opt3": "60-75 Grad",
+    "q9Opt4": "80-90 Grad",
+    "q9Explanation": "Flache Winkel (5-15°) erlauben weite Sprünge über die Ionosphäre.",
+    "q10Question": "Was ist der Vorteil einer Magnetic Loop Antenne?",
+    "q10Opt1": "Hoher Gewinn",
+    "q10Opt2": "Breitbandiger Betrieb",
+    "q10Opt3": "Kompakte Größe und rauscharmer Empfang",
+    "q10Opt4": "Einfache Abstimmung",
+    "q10Explanation": "Magnetic Loops sind klein (gut für beschränkten Platz) und empfangen weniger lokales Rauschen."
+  },
+  "glossary": {
+    "title": "Glossar - Begriffe einfach erklärt",
+    "basicsTitle": "Grundbegriffe",
+    "termShortwave": "Kurzwelle (KW)",
+    "defShortwave": "Radiowellen zwischen 3 und 30 MHz (Wellenlängen 100m bis 10m). Können von der Ionosphäre reflektiert werden und so weltweit funken.",
+    "termWavelength": "Wellenlänge (λ)",
+    "defWavelength": "Die Länge einer kompletten Radiowelle. Auf dem 20m-Band sind es 20 Meter, auf 40m sind es 40 Meter. Antennenlängen werden oft in Bruchteilen von λ angegeben.",
+    "termIonosphere": "Ionosphäre",
+    "defIonosphere": "Geladene Luftschicht in 80-400 km Höhe. Reflektiert Kurzwellen zurück zur Erde. Tagsüber dichter (höhere Frequenzen), nachts dünner (niedrigere Frequenzen besser).",
+    "termPropagation": "Ausbreitung",
+    "defPropagation": "Wie sich Radiowellen von Sender zum Empfänger bewegen. Hängt von Frequenz, Tageszeit, Sonnenaktivität und Antenne ab.",
+    "patternsTitle": "Abstrahldiagramme",
+    "termAzimuth": "Horizontaldiagramm (Azimut)",
+    "defAzimuth": "Zeigt von oben, in welche Himmelsrichtungen die Antenne abstrahlt. Wie ein Grundriss der Antennenstrahlung.",
+    "termElevation": "Vertikaldiagramm (Elevation)",
+    "defElevation": "Zeigt von der Seite, wie steil die Antenne nach oben strahlt. Flach = DX, steil = NVIS.",
+    "termMainLobe": "Hauptkeule",
+    "defMainLobe": "Die Richtung, in der die Antenne am stärksten abstrahlt. Bei Richtantennen deutlich ausgeprägt.",
+    "termTakeoffAngle": "Abstrahlwinkel",
+    "defTakeoffAngle": "Der Winkel zur Horizontalen, in dem das meiste Signal abgestrahlt wird. Niedrig (5-20°) für DX, hoch (60-90°) für NVIS.",
+    "modesTitle": "Betriebsarten",
+    "defNVIS": "Near Vertical Incidence Skywave - Signal geht fast senkrecht hoch und kommt im Umkreis von ~500 km wieder runter. Keine tote Zone, ideal für regionale Netze.",
+    "defDX": "Distance - Weitverbindungen über große Entfernungen. Je flacher der Abstrahlwinkel, desto weiter. Mit Multi-Hop weltweit möglich.",
+    "termSkipZone": "Tote Zone (Skip Zone)",
+    "defSkipZone": "Der Bereich zwischen Ende der Bodenwelle und Beginn der Raumwelle, wo kein Signal ankommt. Größe hängt vom Abstrahlwinkel ab.",
+    "termGroundwave": "Bodenwelle",
+    "defGroundwave": "Signal, das direkt am Boden entlang läuft. Reichweite nur wenige km, aber immer vorhanden.",
+    "termSkywave": "Raumwelle",
+    "defSkywave": "Signal, das zur Ionosphäre geht und zurück reflektiert wird. Ermöglicht Fernverbindungen.",
+    "antennaTitle": "Antennenbegriffe",
+    "termGain": "Gewinn (dBd/dBi)",
+    "defGain": "Wie viel stärker eine Antenne in eine Richtung strahlt verglichen mit einer Referenz. dBd = vs. Dipol, dBi = vs. isotroper Strahler. 3 dB mehr = doppelte Leistung.",
+    "termRadials": "Radiale",
+    "defRadials": "Drähte am Fuß einer Vertikalantenne, die als künstlicher Boden dienen. Mehr Radiale = bessere Effizienz. 16-32 sind typisch.",
+    "termBalun": "Balun",
+    "defBalun": "BALanced-UNbalanced - wandelt symmetrische Antenne (Dipol) auf asymmetrisches Kabel (Koax) um. Verhindert Mantelwellen.",
+    "termSWR": "SWR (Stehwellenverhältnis)",
+    "defSWR": "Zeigt, wie gut die Antenne angepasst ist. 1:1 perfekt, unter 1.5:1 gut, über 3:1 schlecht. Hoher SWR = Leistung wird reflektiert.",
+    "termFB": "Vor/Rück-Verhältnis (F/B)",
+    "defFB": "Bei Richtantennen: Wie viel stärker das Signal nach vorne geht als nach hinten. 20 dB F/B bedeutet 100x stärker nach vorne."
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Diese Datenschutzerklärung informiert Sie über die Datenverarbeitung auf dieser Website.",
+    "noDataTitle": "Keine Datenerhebung",
+    "noDataText": "Diese Website ist ein reines Client-Side-Tool und erhebt, speichert oder verarbeitet keine personenbezogenen Daten.",
+    "noDataList": "Keine Formulare, keine Cookies (außer Spracheinstellung), kein Tracking, keine serverseitige Verarbeitung.",
+    "localStorageTitle": "Lokale Speicherung",
+    "localStorageText": "Die einzigen gespeicherten Informationen sind Ihre Sprachpräferenz und ob Sie das Tutorial gesehen haben. Diese Daten werden lokal in Ihrem Browser gespeichert und nicht an Server übertragen.",
+    "cloudflareTitle": "Cloudflare",
+    "cloudflareText": "Diese Website wird über Cloudflare bereitgestellt. Cloudflare kann technisch notwendige Verbindungsdaten verarbeiten.",
+    "contactTitle": "Kontakt",
+    "contactText": "Bei Fragen zur Datenverarbeitung wenden Sie sich an:"
   }
 }
