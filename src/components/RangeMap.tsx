@@ -181,15 +181,16 @@ export function RangeMap({ config, onClose }: Props) {
             />
             <LocationPicker onLocationChange={handleLocationChange} />
 
-            {/* Multi-hop range (outer, most transparent) */}
+            {/* Multi-hop range (outer) */}
             <Circle
               center={position}
               radius={ranges.multiHop * 1000}
               pathOptions={{
-                color: '#ffc107',
-                fillColor: '#ffc107',
-                fillOpacity: 0.1,
-                weight: 1,
+                color: '#f39c12',
+                fillColor: '#f39c12',
+                fillOpacity: 0.15,
+                weight: 2,
+                dashArray: '5, 5',
               }}
             />
 
@@ -198,23 +199,23 @@ export function RangeMap({ config, onClose }: Props) {
               center={position}
               radius={ranges.singleHop * 1000}
               pathOptions={{
-                color: '#26de81',
-                fillColor: '#26de81',
-                fillOpacity: 0.15,
-                weight: 2,
+                color: '#27ae60',
+                fillColor: '#27ae60',
+                fillOpacity: 0.25,
+                weight: 3,
               }}
             />
 
-            {/* Skip zone (innermost, red) */}
+            {/* Skip zone (innermost, red) - no communication possible */}
             {ranges.skipZone > 0 && (
               <Circle
                 center={position}
                 radius={ranges.skipZone * 1000}
                 pathOptions={{
-                  color: '#ff6b6b',
-                  fillColor: '#ff6b6b',
-                  fillOpacity: 0.25,
-                  weight: 2,
+                  color: '#e74c3c',
+                  fillColor: '#e74c3c',
+                  fillOpacity: 0.35,
+                  weight: 3,
                 }}
               />
             )}
