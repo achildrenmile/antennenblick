@@ -30,7 +30,7 @@ npm run build
 echo ""
 echo "[2/5] Transferring files to Synology..."
 ssh $SYNOLOGY_HOST "mkdir -p $REMOTE_DIR"
-tar czf - Dockerfile docker-compose.yml nginx.conf dist/ | ssh $SYNOLOGY_HOST "cd $REMOTE_DIR && rm -rf dist && tar xzf -"
+tar czf - Dockerfile docker-compose.yml nginx.conf docker-entrypoint.sh dist/ | ssh $SYNOLOGY_HOST "cd $REMOTE_DIR && rm -rf dist && tar xzf -"
 
 # Build Docker image
 echo ""
@@ -43,11 +43,14 @@ echo "[4/5] Restarting container..."
 ssh $SYNOLOGY_HOST "/usr/local/bin/docker stop $CONTAINER_NAME 2>/dev/null || true"
 ssh $SYNOLOGY_HOST "/usr/local/bin/docker rm $CONTAINER_NAME 2>/dev/null || true"
 
-# Start new container
+# Start new container with parent site configuration
 ssh $SYNOLOGY_HOST "/usr/local/bin/docker run -d \
   --name $CONTAINER_NAME \
   --restart unless-stopped \
   -p $CONTAINER_PORT \
+  -e PARENT_SITE_URL='${PARENT_SITE_URL:-}' \
+  -e PARENT_SITE_LOGO='${PARENT_SITE_LOGO:-}' \
+  -e PARENT_SITE_NAME='${PARENT_SITE_NAME:-}' \
   $IMAGE_NAME"
 
 # Verify
