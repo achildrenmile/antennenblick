@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect, useCallback } from 'react';
 import { I18nProvider, useI18n } from './i18n';
+import { useConfig } from './hooks/useConfig';
 import { LanguageToggle } from './components/LanguageToggle';
 import { ThemeToggle } from './components/ThemeToggle';
 import { AntennaSelector } from './components/AntennaSelector';
@@ -43,6 +44,7 @@ import './App.css';
 
 function AppContent() {
   const { t } = useI18n();
+  const { config: siteConfig } = useConfig();
 
   // Primary antenna state
   const [antennaType, setAntennaType] = useState<AntennaType>('dipole');
@@ -263,6 +265,17 @@ function AppContent() {
       )}
 
       <header className="app-header">
+        {siteConfig.parentSiteLogo && siteConfig.parentSiteUrl && (
+          <a
+            href={siteConfig.parentSiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="parent-site-logo"
+            title={siteConfig.parentSiteName || 'Parent Site'}
+          >
+            <img src={siteConfig.parentSiteLogo} alt={siteConfig.parentSiteName || 'Parent Site'} />
+          </a>
+        )}
         <div className="header-content">
           <h1>{t.app.title}</h1>
           <p className="subtitle">{t.app.subtitle}</p>
@@ -458,6 +471,15 @@ function AppContent() {
       </main>
 
       <footer className="app-footer">
+        {siteConfig.parentSiteName && siteConfig.parentSiteUrl && (
+          <div className="footer-parent">
+            {t.footer?.partOf || 'Teil von'}{' '}
+            <a href={siteConfig.parentSiteUrl} target="_blank" rel="noopener noreferrer">
+              {siteConfig.parentSiteName}
+            </a>{' '}
+            Tools
+          </div>
+        )}
         <div className="footer-links">
           <button onClick={() => setLegalModal('imprint')}>{t.footer?.imprint || 'Impressum'}</button>
           <span className="footer-separator">|</span>

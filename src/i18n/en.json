@@ -535,7 +535,8 @@
   "footer": {
     "imprint": "Imprint",
     "privacy": "Privacy",
-    "feedback": "Feedback"
+    "feedback": "Feedback",
+    "partOf": "Part of"
   },
   "compare": {
     "toggle": "Compare",
