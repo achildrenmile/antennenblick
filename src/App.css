@@ -1143,6 +1143,23 @@ body {
   background: var(--color-text-dim);
 }
 
+/* Antenna Schematic */
+.antenna-schematic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: var(--color-surface-hover);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.antenna-schematic svg {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Additional responsive fixes for new elements */
 @media (max-width: 900px) {
   .band-grid {

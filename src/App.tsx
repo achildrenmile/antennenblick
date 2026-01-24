@@ -4,6 +4,7 @@ import { useConfig } from './hooks/useConfig';
 import { LanguageToggle } from './components/LanguageToggle';
 import { ThemeToggle } from './components/ThemeToggle';
 import { AntennaSelector } from './components/AntennaSelector';
+import { AntennaSchematic } from './components/AntennaSchematic';
 import { Controls } from './components/Controls';
 import { RealityToggle } from './components/RealityToggle';
 import { PolarDiagram } from './components/PolarDiagram';
@@ -431,6 +432,7 @@ function AppContent() {
           <>
             <aside className="sidebar">
               <AntennaSelector value={antennaType} onChange={setAntennaType} />
+              <AntennaSchematic type={antennaType} />
               <Controls
                 height={height}
                 onHeightChange={setHeight}
