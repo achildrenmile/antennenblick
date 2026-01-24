@@ -433,11 +433,13 @@ body {
 
 .orientation-indicator {
   stroke: var(--color-accent);
-  stroke-width: 2;
+  stroke-width: 2.5;
+  stroke-linecap: round;
 }
 
 .orientation-arrow {
   fill: var(--color-accent);
+  stroke: none;
 }
 
 .main-lobe-indicator {
@@ -1727,8 +1729,8 @@ body {
 
 .orientation-indicator.primary-indicator,
 .orientation-arrow.primary-arrow {
-  stroke: #4a90d9;
-  fill: #4a90d9;
+  stroke: #e74c3c;
+  fill: #e74c3c;
 }
 
 .orientation-indicator.compare-indicator,

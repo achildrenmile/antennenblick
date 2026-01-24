@@ -123,22 +123,20 @@ export function PolarDiagram({ pattern, orientation, title, comparePattern, comp
           </g>
         )}
 
-        {/* Primary orientation indicator */}
-        {orientation !== 0 && (
-          <g transform={`rotate(${orientation}, ${center}, ${center})`}>
-            <line
-              x1={center}
-              y1={center}
-              x2={center}
-              y2={center - maxRadius * 0.9}
-              className="orientation-indicator primary-indicator"
-            />
-            <polygon
-              points={`${center},${center - maxRadius * 0.95} ${center - 5},${center - maxRadius * 0.85} ${center + 5},${center - maxRadius * 0.85}`}
-              className="orientation-arrow primary-arrow"
-            />
-          </g>
-        )}
+        {/* Primary orientation indicator - always visible */}
+        <g transform={`rotate(${orientation}, ${center}, ${center})`}>
+          <line
+            x1={center}
+            y1={center}
+            x2={center}
+            y2={center - maxRadius * 0.88}
+            className="orientation-indicator primary-indicator"
+          />
+          <polygon
+            points={`${center},${center - maxRadius * 0.97} ${center - 7},${center - maxRadius * 0.85} ${center + 7},${center - maxRadius * 0.85}`}
+            className="orientation-arrow primary-arrow"
+          />
+        </g>
       </svg>
     </div>
   );
