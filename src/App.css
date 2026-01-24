@@ -309,6 +309,32 @@ body {
   color: var(--color-text-dim);
 }
 
+/* Antenna Length Display */
+.antenna-length-display {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  background: var(--color-surface-hover);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+}
+
+.antenna-length-display .length-icon {
+  font-size: 1.1rem;
+}
+
+.antenna-length-display .length-label {
+  color: var(--color-text-dim);
+}
+
+.antenna-length-display .length-value {
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-left: auto;
+}
+
 .band-buttons {
   display: flex;
   gap: 0.5rem;

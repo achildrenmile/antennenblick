@@ -1,7 +1,7 @@
 import { useEffect, useMemo } from 'react';
 import { useI18n } from '../i18n';
 import type { Band, GroundQuality, TerrainType, AntennaType } from '../data/antennaPatterns';
-import { WAVELENGTHS, BAND_CATEGORIES, getSupportedBands } from '../data/antennaPatterns';
+import { WAVELENGTHS, BAND_CATEGORIES, getSupportedBands, getAntennaSpecs } from '../data/antennaPatterns';
 
 interface Props {
   height: number;
@@ -69,6 +69,7 @@ export function Controls({
 
   const wavelength = WAVELENGTHS[band];
   const heightInWavelengths = (height / wavelength).toFixed(2);
+  const antennaSpecs = getAntennaSpecs(antennaType, band, { apexAngle, radialCount });
   const showGroundQuality = ['vertical', 'vertical58', 'collinear'].includes(antennaType);
   const showApexAngle = antennaType === 'invertedV' && onApexAngleChange;
   const showRadialCount = ['vertical', 'vertical58', 'collinear'].includes(antennaType) && onRadialCountChange;
@@ -243,6 +244,14 @@ export function Controls({
           })}
         </div>
       </div>
+
+      {antennaSpecs.length && (
+        <div className="antenna-length-display">
+          <span className="length-icon">📏</span>
+          <span className="length-label">{t.specs?.length || 'Length'}:</span>
+          <span className="length-value">{antennaSpecs.length}</span>
+        </div>
+      )}
 
       {showGroundQuality && (
         <div className="control-group">
