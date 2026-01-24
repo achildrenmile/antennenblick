@@ -364,6 +364,16 @@ const TERRAIN_FACTORS: Record<TerrainType, { distortion: number; angleShift: num
   urban: { distortion: 2.0, angleShift: 0, reflection: 0.75 },    // buildings cause strong distortion
 };
 
+// Calculate radial efficiency for vertical antennas
+// More radials = better ground plane = higher efficiency
+function getRadialEfficiency(radialCount: number | undefined): number {
+  if (!radialCount) return 0.7; // default ~16 radials
+  // Efficiency follows logarithmic curve: diminishing returns after ~32 radials
+  // 4 radials: ~0.50, 8: ~0.60, 16: ~0.70, 32: ~0.82, 64: ~0.92
+  const efficiency = 0.35 + 0.15 * Math.log2(Math.max(4, Math.min(64, radialCount)));
+  return Math.min(1.0, efficiency);
+}
+
 // Height categories based on wavelength fractions
 function getHeightCategory(height: number, band: Band): HeightCategory {
   const wavelength = WAVELENGTHS[band];
@@ -375,15 +385,17 @@ function getHeightCategory(height: number, band: Band): HeightCategory {
 
 // Generate azimuth pattern (top view) - 360 points
 export function generateAzimuthPattern(config: AntennaConfig): PatternPoint[] {
-  const { type, height, band, orientation, realistic, groundQuality, terrain } = config;
+  const { type, height, band, orientation, realistic, groundQuality, terrain, radialCount } = config;
   const heightCat = getHeightCategory(height, band);
-  const groundFactor = type === 'vertical' ? GROUND_FACTORS[groundQuality] : 1;
+  const isVertical = ['vertical', 'vertical58', 'collinear'].includes(type);
+  const groundFactor = isVertical ? GROUND_FACTORS[groundQuality] : 1;
+  const radialFactor = isVertical ? getRadialEfficiency(radialCount) : 1;
   const terrainFactor = TERRAIN_FACTORS[terrain || 'flat'];
   const points: PatternPoint[] = [];
 
   for (let angle = 0; angle < 360; angle++) {
     const adjustedAngle = (angle - orientation + 360) % 360;
-    let magnitude = calculateAzimuthMagnitude(type, adjustedAngle, heightCat) * groundFactor;
+    let magnitude = calculateAzimuthMagnitude(type, adjustedAngle, heightCat) * groundFactor * radialFactor;
 
     // Apply terrain reflection factor
     magnitude *= terrainFactor.reflection;
@@ -400,18 +412,20 @@ export function generateAzimuthPattern(config: AntennaConfig): PatternPoint[] {
 
 // Generate elevation pattern (side view) - 91 points (0-90 degrees)
 export function generateElevationPattern(config: AntennaConfig): PatternPoint[] {
-  const { type, height, band, realistic, groundQuality, terrain } = config;
+  const { type, height, band, realistic, groundQuality, terrain, radialCount } = config;
   const heightCat = getHeightCategory(height, band);
   const wavelength = WAVELENGTHS[band];
   const heightInWavelengths = height / wavelength;
-  const groundFactor = type === 'vertical' ? GROUND_FACTORS[groundQuality] : 1;
+  const isVertical = ['vertical', 'vertical58', 'collinear'].includes(type);
+  const groundFactor = isVertical ? GROUND_FACTORS[groundQuality] : 1;
+  const radialFactor = isVertical ? getRadialEfficiency(radialCount) : 1;
   const terrainFactor = TERRAIN_FACTORS[terrain || 'flat'];
   const points: PatternPoint[] = [];
 
   for (let angle = 0; angle <= 90; angle++) {
     // Apply terrain angle shift
     const shiftedAngle = Math.max(0, Math.min(90, angle + terrainFactor.angleShift));
-    let magnitude = calculateElevationMagnitude(type, shiftedAngle, heightCat, heightInWavelengths, groundQuality) * groundFactor;
+    let magnitude = calculateElevationMagnitude(type, shiftedAngle, heightCat, heightInWavelengths, groundQuality) * groundFactor * radialFactor;
 
     // Apply terrain reflection factor
     magnitude *= terrainFactor.reflection;
@@ -1329,37 +1343,50 @@ export function getAntennaSpecs(type: AntennaType, band: Band, config?: Partial<
         notes: 'specNotes.dipole',
       };
 
-    case 'vertical':
+    case 'vertical': {
+      const efficiency = Math.round(getRadialEfficiency(config?.radialCount) * 100);
       return {
         length: formatLength(wavelength * 0.25),
         height: 'Boden / Ground',
-        radials: config?.radialCount ? `${config.radialCount}× λ/4` : '4-32× λ/4',
+        radials: config?.radialCount
+          ? `${config.radialCount}× λ/4 (${efficiency}% eff.)`
+          : '16× λ/4 (70% eff.)',
         gain: '0-2 dBi',
         impedance: '~36 Ω (λ/4)',
         bandwidth: '~2-4%',
         notes: 'specNotes.vertical',
       };
+    }
 
-    case 'vertical58':
+    case 'vertical58': {
+      const efficiency = Math.round(getRadialEfficiency(config?.radialCount) * 100);
       return {
         length: formatLength(wavelength * 0.625),
         height: 'Boden / Ground',
-        radials: config?.radialCount ? `${config.radialCount}× λ/4` : '4-32× λ/4',
+        radials: config?.radialCount
+          ? `${config.radialCount}× λ/4 (${efficiency}% eff.)`
+          : '16× λ/4 (70% eff.)',
         gain: '3-4 dBi',
         impedance: '~50 Ω (mit Anpassung)',
         bandwidth: '~2-3%',
         notes: 'specNotes.vertical58',
       };
+    }
 
-    case 'collinear':
+    case 'collinear': {
+      const efficiency = Math.round(getRadialEfficiency(config?.radialCount) * 100);
       return {
         length: formatLength(wavelength * 1.25), // two 5/8λ sections
         height: 'Boden / Ground',
+        radials: config?.radialCount
+          ? `${config.radialCount}× λ/4 (${efficiency}% eff.)`
+          : '16× λ/4 (70% eff.)',
         gain: '5-6 dBi',
         impedance: '~50 Ω',
         bandwidth: '~2-3%',
         notes: 'specNotes.collinear',
       };
+    }
 
     case 'invertedV':
       return {
